@@ -1,0 +1,11 @@
+#grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:    "header"
+                                "nav"
+							    "main"
+                                "aside"
+							    "footer";
+    column-gap: 2rem;
+}

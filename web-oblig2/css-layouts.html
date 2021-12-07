@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<title>mariubeg - CSS layouts: Grid, flexbox og andre layout verktøy</title>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="stylesheet" href="gridstyle.css">
+		<link rel="stylesheet" media="print" href="print.css" />
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h2>mariubeg - webutvikling</h2>
+		</header>
+
+		<nav id="navbar">
+			<ul>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="html-forms.html">HTML-skjemaer</a></li>
+				<li><a href="media-queries.html">Mediatyper</a></li>
+				<li><a href="css-layouts.html">CSS layouts</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<article>
+
+				<section>
+                    <header>
+                        <h1 class="headline">CSS layouts: Grid, flexbox og andre layout verktøy</h1>
+                        <p class="intro">
+                            Det er mange måter man kan strukturere innholdet på nettsiden sin. Flere verktøy er tilgjengelig for å gjøre dette, blant annet grid og flexbox, som tillater oss å plassere elementer der vi vil de skal være uten mye styr.
+                        </p>
+                    </header>
+                </section>
+
+                <section>
+                    <header>
+						<h2>Så, hva er grid?</h2>
+					</header>
+                    <p>
+                        Grid er en av de nyere modulene til CSS, som betyr at ikke alle nettleser versjoner støtter alle CSS grid funksjonene. Dette gjør at noen er skeptiske med tanke på støtte for forskjellige nettlesere, men grid har vist seg å fungere bra i en god stund nå. Det ser ut til å bli den nye standarden når man skal lage grid layouts i CSS.
+                    </p>
+					<p>
+						Grid er et todimensjonalt layout system i CSS. Det betyr at man spesifiserer en rekke med rader og kolonner, og hvor store disse skal være. Innenfor disse radene og kolonnene, kan du si hvor innholdet ditt skal plasseres. Du kan også lage etiketter for rader og kolonner, slik at det blir enda enklere og mer tydelig i koden hvilke elementer som skal hvor.
+					</p>
+                    <div class="pagebreak"></div>
+					<figure>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg" alt="Illustrasjon av CSS grid">
+						<figcaption><i>Illustrasjon av CSS grid fra <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="blank">https://css-tricks.com</a></i></figcaption>
+					</figure>
+					<p>
+						På figuren over ser vi et eksempel på et grid layout. Det har 4 kolonner og 3 rader, alle med lik størrelse. Koden ser nok ut som noe sånt:
+					</p>
+<pre><code>grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas:	"header header header header"
+											"main main . sidebar"
+											"footer footer footer footer"</code></pre>
+					<p>
+						Det er ikke så vanskelig å sette opp, det er lite kode som skal til, og veldig enkelt å tilpasse. Riktig bruk av grid sammen med media queries gjør det lekende lett å gjøre nettsiden responsiv og sikrer en god brukeropplevelse. Det er også mulig for elementer i en grid og selv være en grid container, slik at du har "grid i en grid", her er det ikke mange limitasjoner.
+					</p>
+                </section>
+
+				<section>
+                    <div class="pagebreak"></div>
+                    <header>
+						<h2>...og trenger man da flexbox?</h2>
+					</header>
+                    <p>
+                        Ja. Flexbox fungerer i en dimensjon, så man skulle kanskje tro at grid er bedre da det er todimensjonalt. Men, det er noen ting flexbox kan, som grid ikke kan, og vica versa. Grid gir et ganske "firkantet" resultat, mens flexbox lar elementene flyte rundt og virke mer dynamiske.
+					</p>
+					<p>
+						Selv om størrelsen på elementene skulle være ukjente, kan flexbox tilpasse og fordele plass mellom elementene på en måte som virker naturlig. Flexbox brukes derfor ofte til å gjøre elementer så store som mulig med den tilgjengelige plassen, og f.eks. om det blir lite plass, flytte et element under, slik at det blir mer plass igjen. Forskjellige skjermstørrelser, landskapsmodus, portrettmodus etc. vil derfor ikke være noe problem. Med flexbox kan man kanskje trenge å bruke færre media queries for et dynamisk og reponsivt layout.
+                    </p>
+					<figure>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg" alt="Illustrasjon av flexbox retninger">
+						<figcaption><i>Illustrasjon av flexbox retninger fra <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank">https://css-tricks.com</a></i></figcaption>
+					</figure>
+					<p>Vi kan selv velge hvilken retning flexbox elementene skal "flyte" i. Vi velger om elementene i hovedsak skal gå horisontalt eller vertikalt, derfor kalles flexbox endimensjonalt. Plass mellom elementene, og hvor hvor mye plass hvert element skal ta opp kan vi også bestemme. Innholder blir tilpasset dynamisk til de størrelsene vi setter.</p>
+                </section>
+
+				<section>
+                    <div class="pagebreak"></div>
+                    <header>
+						<h2>Hva med andre metoder?</h2>
+					</header>
+                    <p>
+						I dagene før grid og flexbox, ville man også noen ganger ha et rutenettsystem for nettsiden med kolonner og rader, og kunne plassere elementer til venstre eller høyre. Det ble derfor tatt i bruk rammeverk som bootstrap, som inneholder masse stiler for å få elementer der du vil ha dem. Et eksempel på et gridsystem i bootstrap med tre kolonner og en rad kan se slik ut:
+                    </p>
+
+<pre><code>&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-sm"&gt;
+			One of three columns
+		&lt;/div&gt;
+		&lt;div class="col-sm"&gt;
+			One of three columns
+		&lt;/div&gt;
+		&lt;div class="col-sm"&gt;
+			One of three columns
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+					<p>
+						Med dette blir koden veldig rotete. Mange div elementer, mindre semantikk og vanskeligere å lese. Flexbox og grid rydder opp i dette og gjør det enklere å designe layouts også uten å måtte ta i bruk eksterne rammeverk.
+					</p>
+					<p>
+						Noe som også ble brukt før, og som også blir brukt avhengig av situasjonen er <code>float</code>. Float lar oss "flyte" elementer til høyre, venstre og litt mer, men det skaper også situasjoner som vi vil unngå. Foreldreelementer kan kollapse, og du må egentlig bruke "workarounds" for å ta i bruk floats uten å skape uønskede situasjoner. Derfor blir floats i stor grad byttet ut med flexbox og grid layout systemer.
+					</p>
+                </section>
+
+				<section class="sources">
+                    <div class="pagebreak"></div>
+                    <header>
+                        <h4>Kilder og referanser:</h4>
+                    </header>
+                    <ul>
+                        <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="blank">https://css-tricks.com/snippets/css/complete-guide-grid/</a></li>
+                        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods" target="blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods</a></li>
+                        <li><a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="blank">https://getbootstrap.com/docs/4.0/layout/grid/</a></li>
+						<li><a href="https://css-tricks.com/all-about-floats/" target="blank">https://css-tricks.com/all-about-floats/</a></li>
+                    </ul>
+                </section>
+
+			</article>
+		</main>
+		<aside>
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4>Video om webutvikling</h4>
+				<video preload="none" poster="https://i.ibb.co/9qWYHwz/thumbnail.png" controls>
+					<source src="web_development_example_video.mp4" type="video/mp4">
+				</video>
+			</section>
+
+			<section>
+				<h4>Responsivt design - artikler</h4>
+				<ul>
+					<li>❯ <a href="https://www.w3schools.com/html/html_responsive.asp" target="blank" class="hover-link">HTML Responsive Web Design</a></li>
+					<li>❯ <a href="https://web.dev/responsive-web-design-basics/" target="blank" class="hover-link">Responsive web design basics</a></li>
+					<li>❯ <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="blank" class="hover-link">Responsive design</a></li>
+					<li>❯ <a href="https://kinsta.com/blog/responsive-web-design/" target="blank" class="hover-link">The Beginner’s Guide to Responsive Web Design</a></li>
+					<li>❯ <a href="https://xd.adobe.com/ideas/principles/web-design/responsive-web-design-2/" target="blank" class="hover-link">Responsive Web Design Tutorial and Best Practices</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Google søk</h4>
+				<a href="https://www.google.com/search?q=html+forms" target="blank" class="flex-button">HTML forms</a>
+			</section>
+		</aside>
+		<footer>
+			<p>
+				Marius Begby - mariubeg@hiof.no || Webutvikling 2021
+			</p>
+		</footer>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="En artikkel om responsivt design, media queries, media typer og fleksibilitet">
+	<title>mariubeg - Responsivt design: Media queries, typer og fleksibilitet</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body>
+	<div id="grid-container">
+
+		<header id="page-header">
+			<h2>mariubeg <i class="fa-regular fa-code"></i> webutvikling</h2>
+		</header>
+
+		<nav id="navbar" class="responsive-menu">
+			<ul>
+				<li><a href="../">Hjem</a></li>
+				<li><a href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a href="../artikler/css-layouts.html">CSS layouts</a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<article>
+
+				<section>
+					<header>
+						<h1 class="headline">Responsivt design: Media queries, typer og fleksibilitet</h1>
+						<p class="intro">
+							I en verden som hele tiden endrer seg og med haugevis av nye mobiler, tablets og skjermer hvert år er det viktig at siden vår tilpasser seg disse. Innholdet vårt skal se bra ut, uansett skjermstørrelse.
+						</p>
+					</header>
+				</section>
+
+				<section>
+					<header>
+						<h2>Hva betyr responsivt?</h2>
+					</header>
+
+					<p>
+						Responsivt design innebærer at oppsettet og innholdet til siden tilpasses til enheten og måten den vises på. Altså, nettsiden skal <em>respondere</em> på endringer fra klienten. Disse endringene er som regel skjermstørrelse (f.eks. maksbredde) men kan også være andre ting. Formålet med responsivt design er at nettsiden skal se så bra ut som mulig, uansett hvilken enhet eller hvordan man skal vise den.
+					</p>
+
+					<p>
+						Lager man en nettside som er responsiv, slipper man tenke på å vise forskjellige versjoner av siden basert på om det er mobil, tablet eller desktop. Et responsivt design har kun en versjon av innholdet, og oppsettet til innholdet vil "flyte" rundt for å bli vist på best mulig måte.
+					</p>
+				</section>
+
+				<section>
+					<header>
+						<h2>Hvilke verktøy har vi tilgjengelig?</h2>
+					</header>
+
+					<p>
+						I verktøykassen vår er det mange fine verktøy vi kan bruke for å gjøre nettsider mer responsiv. Det er ikke et klart fasitsvar på hvilke verktøy man skal bruke alltid. Det er nettopp det som er med responsivt design, man skal kunne vise frem siden sin på best mulig måte, så man må alltid ta en vurdering på hvilke verktøy som er best å bruke til oppgaven.
+					</p>
+
+					<p>
+						Som et grunnlag for responsivt design kan man bruke grid med flexbox. Grid vil gjøre det enkelt å tilpasse innholdet og oppsettet på siden når det kombineres med media queries. Flexbox brukes der du skal vise flere elementer av et slag på rekke og rad, f.eks. flere bilder eller flere artikler. Flexbox sørger da for god "flyt" innenfor en gitt container, slik at om ikke alle elementer får plass på en rad, flyttes de automatisk til neste kolonne. Du kan lese mer om grid og flexbox her: <a href="https://itstud.hiof.no/~mariubeg/oblig3/artikler/css-layouts.html" class="inline-link">CSS layouts: Grid, flexbox og andre layout verktøy</a>.
+					</p>
+
+					<p>
+						Media queries brukes også for å gjøre nettsider responsive. Dette burde brukes i kombinasjon med grid for å endre oppsettet på siden når siden blir vist på en mobil enhet (f.eks. en kolonne istedenfor flere kolonner), men også til andre ting. Det kan hende man ønsker bilder skal vises på hele bredden på skjermen på mobile enheter, men på en datamaskin skal ikke bilde ta opp hele bredden, for da blir det for stort. Et eksempel på dette er:
+					</p>
+
+<pre><code>img {
+	width 100%
+}
+
+@media only screen and (min-width: 1000px) {
+	img {
+		width: 50%
+	}
+}
+</code></pre>
+
+					<p>
+						Koden er "mobile-first", så bildet vil ta opp 100% bredde på skjermer med mindre enn 1000px bredde, og kun ha 50% bredde om skjermen har over 1000px bredde. Mer om media queries kan du lese her: <a href="https://itstud.hiof.no/~mariubeg/oblig3/artikler/media-queries.html" class="inline-link">Media queries: Dynamisk tilpasning av innhold</a>.
+					</p>
+
+					<p>
+						Det finnes også forskjellige måleenheter vi kan bruke for å definere størrelser på ting; elementer, padding, tekststørrelse etc. Eksempler på disse måleenhetene er listet under:
+					</p>
+
+					<ul>
+						<li><code>px</code> - Pixels</li>
+						<li><code>em</code> - Elementstørrelse basert på fontstørrelsen</li>
+						<li><code>rem</code> - Elementstørrelse baert på fontstørrelsen til rotelementet</li>
+						<li><code>vw</code> - View width - 1% av bredden til visningsporten</li>
+						<li><code>vh</code> - View height - 1% av høyden til visningsporten</li>
+					</ul>
+
+					<p>
+						Man ønsker helst å unngå <code>px</code> som størrelse og heller bruke blant annet <code>em</code> og <code>rem</code> da de er mer responsive. De henger sammen med andre elementer og vil derfor tilpasse seg innholdet på en bedre måte.
+					</p>
+				</section>
+
+				<section>
+					<header>
+						<h2>Mine utfordringer og løsninger</h2>
+					</header>
+
+					<p>
+						Jeg brukte de overnevnte metodene for et responsivt design; Grid og flexbox i bunnen, kombinert med media queries og responsive måleenheter. Det var noen utfordinger jeg møtte på, blant annet at teksten min hadde overflow og "dyttet" seg ut av foreldreelementene. Dette tok litt tid å fikse helt, spesielt for tekst i <code>&lt;pre&gt;</code> taggen til å se bra ut. Mye ble løst med dette:
+					</p>
+
+<pre><code>body {
+	-ms-overflow-style: none;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow: auto;
+}</code></pre>
+
+					<p>
+						Har dessverre ingen illustrasjoner av problemene tilgjengelig per nå, og beklager for lite tekst om mine problemer/løsninger. Håper å utvide denne artikkelen noe i fremtiden med mer av egne erfaringer.
+					</p>
+				</section>
+
+				<section class="sources">
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units</a></li>
+						<li><a href="https://web.dev/responsive-web-design-basics/" target="blank">https://web.dev/responsive-web-design-basics/</a></li>
+						<li><a href="https://kinsta.com/blog/responsive-web-design/" target="blank">https://kinsta.com/blog/responsive-web-design/</a></li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside>
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Responsivt design - artikler</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/html/html_responsive.asp" target="blank"
+							class="hover-link">HTML Responsive Web Design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://web.dev/responsive-web-design-basics/" target="blank"
+							class="hover-link">Responsive web design basics</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+							target="blank" class="hover-link">Responsive design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://kinsta.com/blog/responsive-web-design/" target="blank" class="hover-link">The
+							Beginner’s Guide to Responsive Web Design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://xd.adobe.com/ideas/principles/web-design/responsive-web-design-2/"
+							target="blank" class="hover-link">Responsive Web Design Tutorial and Best Practices</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=html+forms" target="blank" class="flex-button">HTML forms</a>
+			</section>
+		</aside>
+
+		<footer>
+			<p>
+				Marius Begby - mariubeg@hiof.no || Webutvikling 2021
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

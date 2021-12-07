@@ -1,0 +1,19 @@
+aside {
+	grid-area: aside;
+    background-color: $white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 0 3px $shadow_light;
+    ul {
+        padding-left: 0;
+        li {
+            padding-bottom: 0.5em;
+            list-style: none;
+        }
+    }
+    video {
+        border-radius: 3px;
+        width: 100%;
+    }
+}

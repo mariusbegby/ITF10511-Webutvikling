@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="SASS hjelper oss på mange måter å strukturere stilene til nettsiden vår, som gjør det enklere å opprettholde samt tilbyr mer funksjonalitet enn vanlig CSS.">
+	<meta name="keywords" content="sass, scss, css, preprocessing, css tools">
+	<title>SASS: CSS med mindre kode og mer funksjonalitet | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/sass.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="SASS: CSS med mindre kode og mer funksjonalitet | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/sass.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/sass.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about SASS and CSS">
+	<meta property="og:description" content="SASS hjelper oss på mange måter å strukturere stilene til nettsiden vår, som gjør det enklere å opprettholde samt tilbyr mer funksjonalitet enn vanlig CSS.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html"><span lang="en">CSS layouts</span></a></li>
+				<li><a itemprop="url" href="../artikler/seo.html"><span lang="en">SEO</span></a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html"><span lang="en">Microdata</span></a></li>
+				<li><a itemprop="url" href="../artikler/wordpress.html"><span lang="en">WordPress</span></a></li>
+				<li><a itemprop="url" href="../artikler/cms.html"><span lang="en">CMS</span></a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only" lang="en">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 3</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="sass.html"><span itemprop="name">SASS: CSS med mindre kode og mer funksjonalitet</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline">SASS: CSS med mindre kode og mer funksjonalitet</h1>
+						<p class="intro">
+							Det er ikke så morsomt så scrolle ned hundrevis av linjer for å finne den ene knappen du skal endre fargen på. SASS hjelper oss på mange måter å strukturere stilene til nettsiden vår, som gjør det enklere å opprettholde samt tilbyr mer funksjonalitet enn vanlig CSS.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Hva er forskjellen mellom SASS og CSS?</h2>
+					</header>
+
+					<p>
+						Preprosessering. Det som gjør SASS unikt er at det ikke er kode som kjører på nettsiden din. Istedenfor, må SASS koden vi skriver bli omgjort til vanlig CSS før det kan kjøres i nettleseren. Koden blir <em>preprosessert</em> og behandlet, gjort om til vanlig CSS før den leveres til brukeren. Nettleseren forstår nemlig ikke SASS kode. SASS er et verktøy vi kan bruke som kan gjøre livet vårt enklere og spare tid. Vi kan lage mer "avanserte" funksjoner og enklere benytte lik kode om igjen, disse funksjonene vi bruker blir kalkulert og prosessert før det gjøres om til CSS-
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Hva gjør SASS bedre?</h2>
+					</header>
+
+					<p>
+						I SASS er det mange fine innebygde verktøy som vi kan ta i bruk. Blant disse er:
+					</p>
+
+					<ul>
+						<li>Variabler - enkelt gjenbruke verdier, f.eks. farger</li>
+						<li>Nesting - få en ryddigere struktur i koden</li>
+						<li>Partials - Små CSS snippets for gjenbruk</li>
+						<li>Modules - Slipp å ha alt i en fil</li>
+						<li>Mixins - Enkle funksjoner for generering av kode</li>
+						<li>Extend - For tagger som deler like properties</li>
+						<li>Operators - Bruk matematikk i koden</li>
+					</ul>
+				</section>
+
+				<div class="pagebreak"></div>
+				<section itemprop="articleSection">
+					<header>
+						<h2>Sass filstruktur</h2>
+					</header>
+
+					<p>
+						Her er min Sass filstruktur (trykk på filnavn for å åpne filer):
+					</p>
+
+<pre class="file-structure"><b>scss</b>
+│   <a href="../scss/main.scss" target="blank">main.scss</a>
+│
+├───<b>base</b>
+│       <a href="../scss/base/_base-elements.scss" target="blank">_base-elements.scss</a>
+│       <a href="../scss/base/_colors.scss" target="blank">_colors.scss</a>
+│       <a href="../scss/base/_reset.scss" target="blank">_reset.scss</a>
+│       <a href="../scss/base/_typography.scss" target="blank">_typography.scss</a>
+│
+├───<b>components</b>
+│       <a href="../scss/components/_buttons.scss" target="blank">_buttons.scss</a>
+│
+├───<b>layout</b>
+│       <a href="../scss/layout/_aside.scss" target="blank">_aside.scss</a>
+│       <a href="../scss/layout/_footer.scss" target="blank">_footer.scss</a>
+│       <a href="../scss/layout/_grid.scss" target="blank">_grid.scss</a>
+│       <a href="../scss/layout/_main.scss" target="blank">_main.scss</a>
+│       <a href="../scss/layout/_media-queries.scss" target="blank">_media-queries.scss</a>
+│       <a href="../scss/layout/_navbar.scss" target="blank">_navbar.scss</a>
+│       <a href="../scss/layout/_page-header.scss" target="blank">_page-header.scss</a>
+│
+├───<b>pages</b>
+│       <a href="../scss/pages/_article-pages.scss" target="blank">_article-pages.scss</a>
+│       <a href="../scss/pages/_main-page.scss" target="blank">_main-page.scss</a>
+│
+└───<b>utilities</b>
+        <a href="../scss/utilities/_mixins.scss" target="blank">_mixins.scss</a>
+        <a href="../scss/utilities/_variables.scss" target="blank">_variables.scss</a>
+</pre>
+				</section>
+
+				<div class="pagebreak"></div>
+				<section class="sources" itemprop="articleSection">
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li><a href="https://sass-lang.com/guide" target="blank">https://sass-lang.com/guide</a></li>
+						<li><a href="https://www.w3schools.com/sass/" target="blank">https://www.w3schools.com/sass/</a></li>
+						<li><a href="https://medium.com/swlh/learn-the-scss-sass-basics-in-5-minutes-73002653b443" target="blank">https://medium.com/swlh/learn-the-scss-sass-basics-in-5-minutes-73002653b443</a></li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://sass-lang.com/guide" target="blank" rel="nofollow"
+							class="hover-link">Sass Basics</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/sass/" target="blank" rel="nofollow"
+							class="hover-link">Sass Tutorial</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://sass-lang.com/documentation/syntax/structure"
+							target="blank" rel="nofollow" class="hover-link">Structure of a Stylesheet</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://css-tricks.com/sass-style-guide/" target="blank" rel="nofollow" class="hover-link">Sass Style Guide</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://medium.com/litslink/sass-in-examples-5fb9b205c3a8"
+							target="blank" rel="nofollow" class="hover-link">Complete SASS Guide in Examples</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=sass" target="blank" class="flex-button">SASS</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

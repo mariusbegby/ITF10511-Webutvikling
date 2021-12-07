@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Samleside for oppgaver i webutivkling emnet - mariubeg">
+	<title>mariubeg - Webutvikling samleside</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets / CSS and icons -->
+	<link rel="stylesheet" href="./css/main.css">
+
+	<!-- Scripts -->
+	<script src="./js/responsive-menu.js"></script>
+</head>
+
+<body>
+	<div id="grid-container">
+
+		<header id="page-header">
+			<h2>mariubeg <i class="fa-regular fa-code"></i> webutvikling</h2>
+		</header>
+
+		<nav id="navbar" class="responsive-menu">
+			<ul>
+				<li><a href="./">Hjem</a></li>
+				<li><a href="./artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a href="./artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a href="./artikler/media-queries.html">Mediatyper</a></li>
+				<li><a href="./artikler/css-layouts.html">CSS layouts</a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main id="hovedside">
+
+			<div id="hovedside-header">
+				<header>
+					<h1>Webutvikling artikler</h1>
+				</header>
+			</div>
+
+			<article>
+				<header>
+					<h2 class="headline">SASS: CSS med mindre kode og mer funksjonalitet</h2>
+				</header>
+				<img src="res/sass.webp" width="400" height="225"
+					alt="Image for article about SASS">
+				<p class="intro">
+					Det er ikke så morsomt så scrolle ned hundrevis av linjer for å finne den ene knappen du skal endre fargen på.
+					SASS hjelper oss på mange måter å strukturere stilene til nettsiden vår, som gjør det enklere å opprettholde samt tilbyr mer funksjonalitet enn vanlig CSS.
+				</p>
+				<a href="./artikler/sass.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+			<article>
+				<header>
+					<h2 class="headline">Responsivt design: Media queries, typer og fleksibilitet</h2>
+				</header>
+				<img src="res/responsivt-design.webp" width="400" height="225"
+					alt="Image for article about reponsive design">
+				<p class="intro">
+					I en verden som hele tiden endrer seg og med haugevis av nye mobiler, tablets og skjermer hvert år er det viktig at siden vår tilpasser seg disse.
+					Innholdet vårt skal se bra ut, uansett skjermstørrelse.
+				</p>
+				<a href="./artikler/responsivt-design.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+			<article>
+				<header>
+					<h2 class="headline">HTML5: Video og audio på nettet, hvordan?</h2>
+				</header>
+				<img src="res/video_audio.webp" width="400" height="225"
+					alt="Image for article about HTML5 video and audio">
+				<p class="intro">
+					Noen ganger er ikke bilder nok for å få frem et budskap, eller vise hva eller hvordan noe fungerer eller gjøres.
+					HTML har både innebygde elementer for å vise video og lyd, med mye funksjonalitet som kan brukes for å gjøre innholdet tilgjengelig og brukervennlig.
+				</p>
+				<a href="./artikler/html5-video-audio.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+			<article>
+				<header>
+					<h2 class="headline">HTML-skjemaer: Brukerinput og interraksjon</h2>
+				</header>
+				<img src="res/html-forms_400x225.webp" width="400" height="225"
+					alt="Image for article about HTML forms">
+				<p class="intro">
+					HTML-skjemaer lar brukeren samhandle med nettsiden og legge inn brukerinput, som senere kan
+					behandles av webserveren. Ved bruk av skjemaer, kan sluttbrukeren interragere med nettsiden på måter
+					som ikke hadde vært mulig uten skjemaene.
+				</p>
+				<a href="./artikler/html-forms.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+			<article>
+				<header>
+					<h2 class="headline">Media queries: Dynamisk tilpasning av innhold</h2>
+				</header>
+				<img src="res/media-queries_400x225.webp" width="400" height="225"
+					alt="Image for article about media queries">
+				<p class="intro">
+					Noen ganger har man behov for å tilpasse måten innholdet på nettsiden blir vist til brukeren, basert
+					på hvilken enhet den vises på. Dette kan vi løse med media queries. Media queries tillater oss å
+					skrive CSS basert på spesifikke tilstander, f.eks. skjermstørrelsen til brukeren.
+				</p>
+				<a href="./artikler/media-queries.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+			<article>
+				<header>
+					<h2 class="headline">CSS layouts: Grid, flexbox og andre layout verktøy</h2>
+				</header>
+				<img src="res/layouts_400x225.webp" width="400" height="225"
+					alt="Image for article about CSS layout types">
+				<p class="intro">
+					Det er mange måter man kan strukturere innholdet på nettsiden sin. Flere verktøy er tilgjengelig for
+					å gjøre dette, blant annet grid og flexbox, som tillater oss å plassere elementer der vi vil de skal
+					være uten mye styr.
+				</p>
+				<a href="./artikler/css-layouts.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+			<article>
+				<header>
+					<h2 class="headline">Oppgave 1: Planlegging, skrifttyper, farger og wireframes</h2>
+				</header>
+				<img src="res/wireframe_960x540.webp" width="400" height="225"
+					alt="Image for article about wireframe and planning of the website">
+				<p class="intro">
+					Her beskriver jeg min løsning for oppgave 1 som inneholder planlegging av nettsiden. Jeg viser
+					hvilke skrifttyper og farger jeg valgte, og mine wireframes.
+				</p>
+				<a href="./artikler/wireframe.html" class="link-button"><i class="fa-regular fa-angles-right"></i> Les artikkel</a>
+			</article>
+
+		</main>
+
+		<aside>
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Responsivt design - artikler</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/html/html_responsive.asp" target="blank"
+							class="hover-link">HTML Responsive Web Design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://web.dev/responsive-web-design-basics/" target="blank"
+							class="hover-link">Responsive web design basics</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+							target="blank" class="hover-link">Responsive design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://kinsta.com/blog/responsive-web-design/" target="blank" class="hover-link">The
+							Beginner’s Guide to Responsive Web Design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://xd.adobe.com/ideas/principles/web-design/responsive-web-design-2/"
+							target="blank" class="hover-link">Responsive Web Design Tutorial and Best Practices</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=html+forms" target="blank" class="flex-button">HTML forms</a>
+			</section>
+		</aside>
+
+		<footer>
+			<p>
+				Marius Begby - mariubeg@hiof.no || Webutvikling 2021
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

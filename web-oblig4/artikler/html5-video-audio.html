@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="En artikkel om HTM5 video og audio, og hvordan dette fungerer">
+	<meta name="keywords" content="html5, video, audio">
+	<title>HTML5: Video og audio på nettet, hvordan? | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/html5-video-audio.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="HTML5: Video og audio på nettet, hvordan? | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/html5-video-audio.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/video_audio.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about HTML5 video and audio tags">
+	<meta property="og:description" content="HTML har både innebygde elementer for å vise video og lyd, med mye funksjonalitet som kan brukes for å gjøre innholdet tilgjengelig og brukervennlig.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html">CSS layouts</a></li>
+				<li><a itemprop="url" href="../artikler/seo.html">SEO</a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html">Microdata</a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 3</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="html5-video-audio.html"><span itemprop="name">HTML5: Video og audio på nettet, hvordan?</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline">HTML5: Video og audio på nettet, hvordan?</h1>
+						<p class="intro">
+							Noen ganger er ikke bilder nok for å få frem et budskap, eller vise hva eller hvordan noe fungerer eller gjøres. HTML har både innebygde elementer for å vise video og lyd, med mye funksjonalitet som kan brukes for å gjøre innholdet tilgjengelig og brukervennlig.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Utfordringer før HTML5</h2>
+					</header>
+
+					<p>
+						Før HTML5 ble introdusert var det vanskeligere å embedde video og audio på nettsteder. Man måtte ty til løsninger som Flash eller andre plugins, og mobilstøtte var ekstremt dårlig. For audio kunne man bruke workarounds som brukte <code>&lt;bgsound&gt;</code> (ikke lenger støttet), men kom med ulempen at lyden kjørte i bakgrunnen på sideinnlastning og ikke hadde noen brukerkontroller. I 2008 kom HTML5 med støtte for mange nye funskjoner, blant annet <code>&lt;video&gt;</code> og <code>&lt;audio&gt;</code> taggene.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Innebygget videostøtte og egen video tagg</h2>
+					</header>
+
+					<p>
+						Med den nye <code>&lt;video&gt;</code> taggen kan man gjøre mye mer enn før. Best av alt er kanskje at man slipper tredjepartsløsninger for å vise frem en video på nettsider. Selv om den nye <code>&lt;video&gt;</code> taggen hadde mye kult, tok det tid før nettsteder gikk over til denne løsningen. Mange brukte fortsatt tredjepartsløsninger, og det var ikke før i 2015 at YouTube gikk over til HTML5 som standard for sin videoavspiller. I videoen under, ser vi hvordan man kan bruke <code>&lt;video&gt;</code> taggen på nettsider:
+					</p>
+
+					<div class="youtube-wrapper">
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lZVFUQOCQWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+					<p>
+						Når man skal vise en video på en nettside, er det et par ting man må tenkte på: Kodeker og komprimering. Man ønsker å bruke kodeker som er bredt støttet, slik at flest enheter kan se videoen. I tillegg burde videoen være så komprimert som mulig uten å miste mye kvalitet, slik at den enkelt kan bli sendt ut til brukerene for nettstedet uten bruk av mye ressurser. Det finnes flere forskjellige kodeker, hver med sine fordeler og ulemper. Her er noen vanlige kodeker:
+					</p>
+
+					<ul>
+						<li><code>AVC</code> (H.264) - Støtter 3GP, MP4</li>
+						<li><code>HEVC</code> (H.265) - Støtter MP4</li>
+						<li><code>MPEG-2</code> - Støtter MP4, MPEG, QuickTime</li>
+						<li><code>VP9</code> - Støtter MP4, Ogg, WebM</li>
+					</ul>
+
+					<p>Du kan lese mer om de forskjellige kodekene <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs#common_codecs" target="blank">her</a>. Man må vurdere hva videoen som skal vises skal brukes for. Noen ganger er det verdt å ofre kvalitet for mindre filstørrelse. Når man komprimerer videoen, kan artefakter oppstå. Et eksempel er såkalt kontur-effekt eller fargebånd, som sett her:</p>
+
+					<figure>
+						<img src="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs/contouring-effect.jpg" alt="">
+						<figcaption><i>Bilde tatt fra <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs#contouring" target="blank">MDN Web Docs</a></i></figcaption>
+					</figure>
+
+					<p>
+						Skal man velge et format er det MP4 og WebM som er de vanligste i dag. MP4 har vært tilgjengelig lenger og har derfor større tilgjengelighet. WebM er et open source prosjekt satt i gang av Google for å kunne tilby video med god kvalitet og liten filstørrelse, og kodeken har også god støtte blant enheter og nettlesere.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Lyd på nettet: Audio taggen</h2>
+					</header>
+
+					<p>
+						Skal du spille av lyd uten bilde kan man bruke <code>&lt;audio&gt;</code> taggen som ble introdusert i HTML5. Den har ganske lik syntaks som <code>&lt;video&gt;</code> taggen med tanke på at man spesifiserer "fallback" filer for bred støtte, og tekst som vises dersom elementet ikke støttes av nettleseren. Det er tre forskjellige filformater som er støttet i HTMl5:
+					</p>
+
+					<ul>
+						<li><code>MP3</code> - Brukes for generell komprimert lyd</li>
+						<li><code>WAV</code> - Ukomprimert lyd, god kvalitet</li>
+						<li><code>OGG</code> - Best kvalitet kombinert med minst størrelse</li>
+					</ul>
+
+					<p>Her er et eksempel på bruk av audio taggen tatt fra <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="blank">MDN Web Docs</a>:</p>
+
+<pre><code>&lt;audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"&gt;
+    Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+&lt;/audio&gt;</code></pre>
+
+					<p>Dette gir resultatet: </p>
+
+					<audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+						Your browser does not support the <code>audio</code> element.
+					</audio>
+				</section>
+
+				<section class="sources" itemprop="articleSection">
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li>
+							<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="blank">https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content</a>
+						</li>
+						<li>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs" target="blank">https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs</a>
+						</li>
+						<li>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs" target="blank">https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs</a>
+						</li>
+						<li>
+							<a href="https://www.w3schools.com/html/html5_video.asp" target="blank">https://www.w3schools.com/html/html5_video.asp</a>
+						</li>
+						<li>
+							<a href="https://www.w3schools.com/html/html5_audio.asp" target="blank">https://www.w3schools.com/html/html5_audio.asp</a>
+						</li>
+						<li>
+							<a href="https://www.w3docs.com/learn-html/audio-and-video-in-html5.html" target="blank">https://www.w3docs.com/learn-html/audio-and-video-in-html5.html</a>
+						</li>
+						<li>
+							<a href="https://www.tutorialspoint.com/html5/html5_audio_video.htm" target="blank">https://www.tutorialspoint.com/html5/html5_audio_video.htm</a>
+						</li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/html/html5_video.asp" target="blank" rel="nofollow"
+							class="hover-link">HTML Video</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="blank" rel="nofollow"
+							class="hover-link">The Video Embed element</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/html/html5_audio.asp"
+							target="blank" rel="nofollow" class="hover-link">HTML Audio</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="blank" rel="nofollow" class="hover-link">The Embed Audio element</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content"
+							target="blank" rel="nofollow" class="hover-link">Video and audio content</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=html+video+audio+elements" target="blank" class="flex-button">HTML video and audio elements</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

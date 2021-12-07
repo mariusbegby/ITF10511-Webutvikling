@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="En artikkel om grid, flexbox og andre layout verktøy i CSS">
+	<meta name="keywords" content="css, grid, flexbox, float">
+	<title>CSS layouts: Grid, flexbox og andre verktøy | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/css-layouts.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="CSS layouts: Grid, flexbox og andre verktøy | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/css-layouts.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/layouts_400x225.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about grid and flexbox">
+	<meta property="og:description" content="Det er mange måter man kan strukturere innholdet på nettsiden sin. Flere verktøy er tilgjengelig for å gjøre dette, blant annet grid og flexbox.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html"><span lang="en">CSS layouts</span></a></li>
+				<li><a itemprop="url" href="../artikler/seo.html"><span lang="en">SEO</span></a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html"><span lang="en">Microdata</span></a></li>
+				<li><a itemprop="url" href="../artikler/wordpress.html"><span lang="en">WordPress</span></a></li>
+				<li><a itemprop="url" href="../artikler/cms.html"><span lang="en">CMS</span></a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only" lang="en">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 2</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="css-layouts.html"><span itemprop="name">CSS layouts: Grid, flexbox og andre verktøy</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline"><span lang="en"><abbr title="Cascading Style Sheets">CSS</abbr> layouts: Grid, flexbox</span> og andre verktøy</h1>
+						<p class="intro">
+							Det er mange måter man kan strukturere innholdet på nettsiden sin. Flere verktøy er
+							tilgjengelig for å gjøre dette, blant annet <span lang="en">grid</span> og <span lang="en">flexbox</span>, som tillater oss å plassere
+							elementer der vi vil de skal være uten mye styr.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Så, hva er grid?</h2>
+					</header>
+
+					<p>
+						<span lang="en">Grid</span> er en av de nyere modulene til CSS, som betyr at ikke alle nettleser versjoner støtter alle
+						CSS <span lang="en">grid</span> funksjonene. Dette gjør at noen er skeptiske med tanke på støtte for forskjellige
+						nettlesere, men grid har vist seg å fungere bra i en god stund nå. Det ser ut til å bli den nye
+						standarden når man skal lage <span lang="en">grid layouts</span> i CSS.
+					</p>
+
+					<p>
+						<span lang="en">Grid</span> er et todimensjonalt <span lang="en">layout</span> system i CSS. Det betyr at man spesifiserer en rekke med rader
+						og kolonner, og hvor store disse skal være. Innenfor disse radene og kolonnene, kan du si hvor
+						innholdet ditt skal plasseres. Du kan også lage etiketter for rader og kolonner, slik at det
+						blir enda enklere og mer tydelig i koden hvilke elementer som skal hvor.
+					</p>
+
+					<div class="pagebreak"></div>
+					<figure>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg"
+							alt="Illustrasjon av CSS grid">
+						<figcaption><i>Illustrasjon av CSS <span lang="en">grid</span> fra <a
+									href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+									target="blank">https://css-tricks.com</a></i></figcaption>
+					</figure>
+
+					<p>
+						På figuren over ser vi et eksempel på et <span lang="en">grid layout</span>. Det har 4 kolonner og 3 rader, alle med
+						lik størrelse. Koden ser nok ut som noe sånt:
+					</p>
+
+					<pre><code>grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas:	"header header header header"
+											"main main . sidebar"
+											"footer footer footer footer"</code></pre>
+
+					<p>
+						Det er ikke så vanskelig å sette opp, det er lite kode som skal til, og veldig enkelt å
+						tilpasse. Riktig bruk av grid sammen med media queries gjør det lekende lett å gjøre nettsiden
+						responsiv og sikrer en god brukeropplevelse. Det er også mulig for elementer i en grid og selv
+						være en grid container, slik at du har "grid i en grid", her er det ikke mange limitasjoner.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<div class="pagebreak"></div>
+					<header>
+						<h2>...og trenger man da <span lang="en">flexbox</span>?</h2>
+					</header>
+
+					<p>
+						Ja. <span lang="en">Flexbox</span> fungerer i en dimensjon, så man skulle kanskje tro at grid er bedre da det er
+						todimensjonalt. Men, det er noen ting <span lang="en">flexbox</span> kan, som <span lang="en">grid</span> ikke kan, og vica versa. <span lang="en">Grid</span> gir et
+						ganske "firkantet" resultat, mens <span lang="en">flexbox</span> lar elementene flyte rundt og virke mer dynamiske.
+					</p>
+
+					<p>
+						Selv om størrelsen på elementene skulle være ukjente, kan <span lang="en">flexbox</span> tilpasse og fordele plass
+						mellom elementene på en måte som virker naturlig. <span lang="en">Flexbox</span> brukes derfor ofte til å gjøre
+						elementer så store som mulig med den tilgjengelige plassen, og f.eks. om det blir lite plass,
+						flytte et element under, slik at det blir mer plass igjen. Forskjellige skjermstørrelser,
+						landskapsmodus, portrettmodus etc. vil derfor ikke være noe problem. Med <span lang="en">flexbox</span> kan man kanskje
+						trenge å bruke færre <span lang="en">media queries</span> for et dynamisk og reponsivt <span lang="en">layout</span>.
+					</p>
+
+					<figure>
+						<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg"
+							alt="Illustrasjon av flexbox retninger">
+						<figcaption><i>Illustrasjon av <span lang="en">flexbox</span> retninger fra <a
+									href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+									target="blank">https://css-tricks.com</a></i></figcaption>
+					</figure>
+
+					<p>Vi kan selv velge hvilken retning <span lang="en">flexbox</span> elementene skal "flyte" i. Vi velger om elementene i
+						hovedsak skal gå horisontalt eller vertikalt, derfor kalles <span lang="en">flexbox</span> endimensjonalt. Plass mellom
+						elementene, og hvor hvor mye plass hvert element skal ta opp kan vi også bestemme. Innholder
+						blir tilpasset dynamisk til de størrelsene vi setter.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<div class="pagebreak"></div>
+					<header>
+						<h2>Hva med andre metoder?</h2>
+					</header>
+
+					<p>
+						I dagene før <span lang="en">grid</span> og <span lang="en">flexbox</span>, ville man også noen ganger ha et rutenettsystem for nettsiden med
+						kolonner og rader, og kunne plassere elementer til venstre eller høyre. Det ble derfor tatt i
+						bruk rammeverk som bootstrap, som inneholder masse stiler for å få elementer der du vil ha dem.
+						Et eksempel på et <span lang="en">gridsystem</span> i bootstrap med tre kolonner og en rad kan se slik ut:
+					</p>
+
+					<pre><code>&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-sm"&gt;
+			One of three columns
+		&lt;/div&gt;
+		&lt;div class="col-sm"&gt;
+			One of three columns
+		&lt;/div&gt;
+		&lt;div class="col-sm"&gt;
+			One of three columns
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+					<p>
+						Med dette blir koden veldig rotete. Mange div elementer, mindre semantikk og vanskeligere å
+						lese. <span lang="en">Flexbox</span> og <span lang="en">grid</span> rydder opp i dette og gjør det enklere å designe <span lang="en">layouts</span> også uten å måtte
+						ta i bruk eksterne rammeverk.
+					</p>
+
+					<p>
+						Noe som også ble brukt før, og som også blir brukt avhengig av situasjonen er
+						<code><span lang="en">float</span></code>. <span lang="en">Float</span> lar oss "flyte" elementer til høyre, venstre og litt mer, men det
+						skaper også situasjoner som vi vil unngå. Foreldreelementer kan kollapse, og du må egentlig
+						bruke "<span lang="en">workarounds</span>" for å ta i bruk <span lang="en">floats</span> uten å skape uønskede situasjoner. Derfor blir <span lang="en">floats</span>
+						i stor grad byttet ut med <span lang="en">flexbox</span> og <span lang="en">grid layout</span> systemer.
+					</p>
+				</section>
+
+				<section class="sources" itemprop="articleSection">
+					<div class="pagebreak"></div>
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+								target="blank">https://css-tricks.com/snippets/css/complete-guide-grid/</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+								target="blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods"
+								target="blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods</a>
+						</li>
+						<li><a href="https://getbootstrap.com/docs/4.0/layout/grid/"
+								target="blank">https://getbootstrap.com/docs/4.0/layout/grid/</a></li>
+						<li><a href="https://css-tricks.com/all-about-floats/"
+								target="blank">https://css-tricks.com/all-about-floats/</a></li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout" target="blank" rel="nofollow"
+							class="hover-link">CSS Layout</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/css/css_website_layout.asp" target="blank" rel="nofollow"
+							class="hover-link">CSS Website Layout</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://csslayout.io/"
+							target="blank" rel="nofollow" class="hover-link">Popular layouts and patterns made with CSS</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://learnlayout.com/" target="blank" rel="nofollow" class="hover-link">Learn CSS Layout</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+							target="blank" rel="nofollow" class="hover-link">A Complete Guide to Grid</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=css+layouts" target="blank" class="flex-button">CSS layouts</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

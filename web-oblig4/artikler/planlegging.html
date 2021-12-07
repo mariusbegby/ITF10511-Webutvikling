@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="En artikkel om min planlegging av siden, wireframes, skrifttyper og farger">
+	<meta name="keywords" content="planlegging, wireframe, fonts, colors">
+	<title>Planlegging: Skrifttyper, farger og wireframes | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/planlegging.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="Planlegging: Skrifttyper, farger og wireframes | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/planlegging.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/wireframe_960x540.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="960">
+	<meta property="og:image:height" content="540">
+	<meta property="og:image:alt" content="Image for article about website planning, wireframes, fonts and colors">
+	<meta property="og:description" content="Her beskriver jeg min løsning for oppgave 1 som inneholder planlegging av nettsiden. Jeg viser hvilke skrifttyper og farger jeg valgte, og mine wireframes.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html">CSS layouts</a></li>
+				<li><a itemprop="url" href="../artikler/seo.html">SEO</a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html">Microdata</a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 2</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="planlegging.html"><span itemprop="name">Planlegging: Skrifttyper, farger og wireframes</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline">Planlegging: Skrifttyper, farger og wireframes</h1>
+						<p class="intro">
+							Her beskriver jeg min løsning for oppgave 1 i oblig 2 som inneholder planlegging av nettsiden. Jeg
+							viser hvilke skrifttyper og farger jeg valgte, og mine wireframes.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Skrifttyper</h2>
+					</header>
+
+					<p>
+						Under planlegging valgte jeg ut noen farger og skrifttyper som jeg skulle forholde meg til.
+						Dette er skrifttypene som jeg har valgt og skal forholde meg til over hele nettsiden.
+					</p>
+
+					<ul>
+						<li><span class="source-serif-pro-600">Source Serif Pro (600)</span> - Artikkel h1 tagger</li>
+						<li><span class="lato-700">Lato (700)</span> - Meny elementer/overskrifter og artikkel h2-h6
+							tagger</li>
+						<li><span class="noto-serif-400">Noto Serif (400)</span> - Artikkel abstrakt/introduksjon og
+							sitater</li>
+						<li><span class="work-sans-400">Work Sans (400)</span> - Paragrafer og tekst</li>
+						<li><span class="ibm-plex-mono-400">IBM Plex Mono (400)</span> - Kode/monospace</li>
+					</ul>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Farger</h2>
+					</header>
+
+					<p>
+						Her kommer også fargene jeg valgte ut:
+					</p>
+
+					<ul>
+						<li><span class="eerie-black">Eerie black</span></li>
+						<li><span class="jet">Jet</span></li>
+						<li><span class="independence">Indepencence</span></li>
+						<li><span class="cyber-grape">Cyber grape</span></li>
+						<li><span class="tuscan-red">Tuscan red</span></li>
+						<li><span class="cultured">Cultured</span></li>
+						<li><span class="cultured-alt">Cultured (alt)</span></li>
+						<li><span class="cultured-dark">Cultured (dark)</span></li>
+						<li><span class="shadow-light">Shadow (light)</span></li>
+						<li><span class="shadow-dark">Shadow (dark)</span></li>
+						<li><span class="white">White</span></li>
+					</ul>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Hovedside wireframe</h2>
+					</header>
+
+					<p>Dette er min planlegging/wireframe for hovedsiden som viser de siste artiklene.</p>
+
+					<figure>
+						<img src="https://i.ibb.co/Yctcv7Z/wireframe-main.png"
+							alt="Wireframe for hovedsiden som viser artiklene" class="bigger-image">
+						<figcaption>Wireframe for hovedsiden som viser artiklene.</figcaption>
+					</figure>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Artikkelside wireframe</h2>
+					</header>
+
+					<p>Dette er min planlegging/wireframe for artikkelsider som viser en enkelt artikkel.</p>
+
+					<figure>
+						<img src="https://i.ibb.co/2jXTNdM/wireframe-article.png"
+							alt="Wireframe for artikkelsiden som viser en enkelt artikkel" class="bigger-image">
+						<figcaption>Wireframe for artikkelsiden som viser en enkelt artikkel.</figcaption>
+					</figure>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.justinmind.com/blog/website-wireframe-design-guide/" target="blank" rel="nofollow"
+							class="hover-link">The complete guide to website wireframe design</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://blog.hubspot.com/website/website-wireframe" target="blank" rel="nofollow"
+							class="hover-link">Website Wireframe Beginner's Guide</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.figma.com/templates/wireframe-kits/"
+							target="blank" rel="nofollow" class="hover-link">Wireframe Kits</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.smartdraw.com/website-wireframe/" target="blank" rel="nofollow" class="hover-link">Website Wireframe</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.protofuse.com/blog/details/website-wireframing-helps-plan-better-content/"
+							target="blank" rel="nofollow" class="hover-link">Wireframing Helps You Plan For Better Content</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=html+wireframe" target="blank" class="flex-button">HTML wireframe</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

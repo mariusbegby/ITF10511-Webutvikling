@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="WordPress tillater oss å lage innhold og publisere en nettside uten noe særlig krav til forkunnskaper om koding. Uten å skrive en eneste kodelinje, kan man installerek, sette opp og konfigurere WordPress slik at man kan publisere innhold som ser bra ut. Ingen HTML, CSS eller lignende.">
+	<meta name="keywords" content="wordpress, cms, content management system">
+	<title>WordPress: Installasjon, oppsett og konfigurering | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/wordpress.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="Wordpress: Installasjon, oppsett og konfigurering | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/wordpress.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/wordpress_400x225.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about TEMPLATE">
+	<meta property="og:description" content="WordPress tillater oss å lage innhold og publisere en nettside uten noe særlig krav til forkunnskaper om koding. Uten å skrive en eneste kodelinje, kan man installerek, sette opp og konfigurere WordPress slik at man kan publisere innhold som ser bra ut. Ingen HTML, CSS eller lignende.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html"><span lang="en">CSS layouts</span></a></li>
+				<li><a itemprop="url" href="../artikler/seo.html"><span lang="en">SEO</span></a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html"><span lang="en">Microdata</span></a></li>
+				<li><a itemprop="url" href="../artikler/wordpress.html"><span lang="en">WordPress</span></a></li>
+				<li><a itemprop="url" href="../artikler/cms.html"><span lang="en">CMS</span></a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only" lang="en">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 5</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="mal.html"><span itemprop="name">WordPress: Installasjon, oppsett og konfigurering</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline">WordPress: Installasjon, oppsett og konfigurering</h1>
+						<p class="intro">
+							WordPress tillater oss å lage innhold og publisere en nettside uten noe særlig krav til forkunnskaper om koding. Uten å skrive en eneste kodelinje, kan man installerek, sette opp og konfigurere WordPress slik at man kan publisere innhold som ser bra ut. Ingen HTML, CSS eller lignende.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Installasjon av WordPress</h2>
+					</header>
+
+					<p>
+						Her viser jeg min fremgangsmåte og steg for å installere og konfigurere det nødvendige for WordPress. Etter denne prosessen vil WordPress være klar til bruk og videre konfigurering.
+					</p>
+
+					<h3>Steg 1: Laste ned Wordpress</h3>
+					<figure>
+						<img src="../res/wordpress-step1.webp" alt="Steg 1: Laste ned WordPress" class="smaller-image">
+						<figcaption><i>Steg 1: Laste ned WordPress</i></figcaption>
+					</figure>
+					<p>
+						Jeg går til <a href="https://wordpress.org" class="inline-link">wordpress.org</a> og laster ned WordPress. WordPress er også tilgjengelig fra <a href="https://wordpress.com/" class="inline-link">wordpress.com</a>, men det er den kommersielle nettsiden til WordPress, hvor de tilbyr å holde nettsiden oppe på sine servere for en pris. Vi skal bruke <a href="https://wordpress.org" class="inline-link">wordpress.org</a>, som er nettsiden for WordPress versjonen i åpen kildekode, og helt gratis. Vi har en <abbr title="Windows Apache MySQL PHP">WAMP</abbr> server som vi skal bruke for å kjøre nettsiden.
+					</p>
+
+					<h3>Steg 2: Pakke ut .zip filen og legge filer i www mappen</h3>
+					<figure>
+						<img src="../res/wordpress-step2.webp" alt="Steg 2: Pakke ut .zip filen og legge filer i www mappen" class="smaller-image">
+						<figcaption><i>Steg 2: Pakke ut .zip filen og legge filer i www mappen</i></figcaption>
+					</figure>
+					<p>
+						Etter å ha lastet ned <code>.zip</code> filen som inneholder alle filene som utgjøre WordPress, pakker vi ut <code>.zip</code> filen og legger filene i "www"-mappen til <abbr title="Windows Apache MySQL PHP">WAMP</abbr> serveren vår. Som standard ligger denne i <code>C:\wamp64\www</code>.
+					</p>
+
+					<h3>Steg 3: Følge installasjonsveilederen</h3>
+					<figure>
+						<img src="../res/wordpress-step3.webp" alt="Steg 3: Følge installasjonsveilederen" class="smaller-image">
+						<figcaption><i>Steg 3: Følge installasjonsveilederen</i></figcaption>
+					</figure>
+					<p>
+						Etter å ha flyttet filene til "www"-mappen, og ha startet wampserveren vår, er nettsiden oppe og WordPress installert. Videre må vi velge språk for installasjonsveilederen.
+					</p>
+
+					<h3>Steg 4: Koble til databasen</h3>
+					<figure>
+						<img src="../res/wordpress-step4.webp" alt="Steg 4: Koble til databasen" class="smaller-image">
+						<figcaption><i>Steg 4: Koble til databasen</i></figcaption>
+					</figure>
+					<p>
+						WordPress bruker en database for å lagre all informasjon om innlegg, sider, konfigurasjon mm. Så for å fortsette oppsettet av WordPress må vi koble til en database. Jeg åpner MySQL-konsollen og skriver <code>CREATE DATABASE wordpress;</code> og trykker <code>enter</code>. Da har jeg opprettet en tom database som wordpress kan bruke. Standard administrator for MySQL er <code>root</code> uten noe passord. Jeg fyller inn feltene med informasjon om databasen som skal brukes, og lar Table Prefix stå tom.
+					</p>
+
+					<h3>Steg 5: Opprette administratorbruker for WordPress</h3>
+					<figure>
+						<img src="../res/wordpress-step5.webp" alt="Steg 5: Opprette administratorbruker for WordPress" class="smaller-image">
+						<figcaption><i>Steg 5: Opprette administratorbruker for WordPress</i></figcaption>
+					</figure>
+					<p>
+						Etter å ha koblet til databasen kan vi opprette en administratorbruker for WordPress. Vi setter også en tittel / et navn for nettsiden vår. Jeg velger å kalle den brukernavnet mitt "mariubeg", og lar administratorbrukeren hete <code>admin</code> med det samme som passord. Nettsiden skal bare brukes lokalt og for læring, så det går fint. Jeg velger også at nettsiden ikke skal indekseres av søkemotorer før jeg trykker "Install WordPress" og fullfører oppsettet.
+					</p>
+
+					<h3>Steg 6: Ferdig med installasjon</h3>
+					<figure>
+						<img src="../res/wordpress-step6.webp" alt="Steg 6: Ferdig med installasjon">
+						<figcaption><i>Steg 6: Ferdig med installasjon</i></figcaption>
+					</figure>
+					<p>
+						Nå er WordPress ferdig installert og satt opp slik at den er klar til bruk. Vi kan også konfigurere videre fra dashbordet.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Videre konfigurering: Temaer, plugins og widgets</h2>
+					</header>
+
+					<p>
+						Videre skal jeg installere to temaer, plugins og ta i bruk to widgets. Alt dette kan jeg få satt opp gjennom dashbordet. Som standard er dashbordet tilgjengelig via <code>/wp-admin/</code> etter URL-en til nettstedet. F.eks. <code>localhost/wp-admin/</code>.
+					</p>
+
+					<h3>Steg 7: Installasjon av temaer</h3>
+					<figure>
+						<img src="../res/wordpress-step7.webp" alt="Steg 7: Installasjon av temaer" class="smaller-image">
+						<figcaption><i>Steg 7: Installasjon av temaer</i></figcaption>
+					</figure>
+					<p>
+						For å installere et nytt tema går man til dashbordet og så <code>Appearance -> Themes -> "Add New Theme"</code>. Man får opp et hav med tusenvis av forskjellige temaer som enkelt kan installeres med et klikk. Jeg finner to jeg liker, og installerer dem. Til slutt endte jeg opp med å installere "Go" og "Markup". Temaet "Go" hadde ingen støtte for widgets, så jeg valgte å bruke "Markup" til slutt, da den hadde støtte for widgets.
+					</p>
+
+					<h3>Steg 8: Teste ut aktivert tema</h3>
+					<figure>
+						<img src="../res/wordpress-step8.webp" alt="Steg 8: Teste ut aktivert tema" class="smaller-image">
+						<figcaption><i>Steg 8: Teste ut aktivert tema</i></figcaption>
+					</figure>
+					<p>
+						Etter å ha aktivert temaet "Markup", går jeg tilbake til hovedsiden min for å se om det ble aktivert riktig. Det ble det, siden ser nå annerledes ut, men er fortsatt uten innhold.
+					</p>
+
+					<h3>Steg 9: Installasjon av utvidelser</h3>
+					<figure>
+						<img src="../res/wordpress-step9.webp" alt="Steg 9: Installasjon av plugins" class="smaller-image">
+						<figcaption><i>Steg 9: Installasjon av utvidelser</i></figcaption>
+					</figure>
+					<p>
+						Før jeg installerer nye utvidelser, sletter jeg de to plugins som følger med WordPress som standard, "Hello Dolly" og "Akismet Anti-Spam". For å installere nye utvidelser går man til dashbordet, og så videre til <code>Plugins -> "Add New"</code>. Jeg velger å installere "Classic Editor" og "Yoast SEO". "Classic Editor" gjør den gamle WordPress editoren tilgjengelig igjen, og "Yoast SEO" hjelper oss holde styr på SEO mens vi lager nye sider og innlegg. Jeg skrur også på automatiske oppdateringer av disse utvidelsene.
+					</p>
+
+					<h3>Steg 10: Konfigurasjon av utvidelser</h3>
+					<figure>
+						<img src="../res/wordpress-step10.webp" alt="Steg 10: Konfigurasjon av utvidelser" class="smaller-image">
+						<figcaption><i>Steg 10: Konfigurasjon av utvidelser</i></figcaption>
+					</figure>
+					<p>
+						"Classic Editor" utvidelsen trenger ingen konfigurasjon. For "Yoast SEO", har de en førstegangsveileder som jeg kan følge. Der velger jeg blant annet om siden representerer en bedrift eller enkeltperson, om det er en blog eller en butikk, og flere andre ting.
+					</p>
+
+					<h3>Steg 11: Oppsett av widgets</h3>
+					<figure>
+						<img src="../res/wordpress-step11.webp" alt="Steg 11: Oppsett av widgets" class="smaller-image">
+						<figcaption><i>Steg 11: Oppsett av widgets</i></figcaption>
+					</figure>
+					<p>
+						For å konfigurere widgets, går man til <code>Appearance -> Widgets</code> og trykker på "+"-ikonet for å legge til og konfigurere nye widgets. For å kunne sette opp widgets må temaet du bruker støtte dette. Jeg setter opp en widget i sidebar for deling til sosiale medier, og en widget i footer for søk på nettsiden.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Lage innhold: Opprette sider og innlegg</h2>
+					</header>
+
+					<p>
+						Nå som tema, utvidelser og widgets er på plass, kan jeg starte å lage innhold til siden. Jeg skal opprette to sider og to innlegg, og gjøre den ene siden til statisk forside. Alle sidene og innleggene skal også få et fremhevet bilde.
+					</p>
+
+					<h3>Steg 12: Opprette forside</h3>
+					<figure>
+						<img src="../res/wordpress-step12.webp" alt="Steg 12: Opprette forside">
+						<figcaption><i>Steg 12: Opprette forside</i></figcaption>
+					</figure>
+					<p>
+						Her lager jeg en ny side i WordPress som skal fungere som en statisk forside. Jeg legger til moduler som viser nyeste poster og linker til alle sidene også.
+					</p>
+
+					<h3>Steg 13: Lage kontakt-side</h3>
+					<figure>
+						<img src="../res/wordpress-step13.webp" alt="Steg 13: Lage kontakt-side">
+						<figcaption><i>Steg 13: Lage kontakt-side</i></figcaption>
+					</figure>
+					<p>
+						Videre lager jeg en kontakt side som inneholder litt info om meg.
+					</p>
+
+					<h3>Steg 14: Lage artikkel om WordPress</h3>
+					<figure>
+						<img src="../res/wordpress-step14.webp" alt="Steg 14: Lage artikkel om WordPress">
+						<figcaption><i>Steg 14: Lage artikkel om WordPress</i></figcaption>
+					</figure>
+					<p>
+						Jeg lager så en liten artikkel om WordPress og publiserer den.
+					</p>
+
+					<h3>Steg 15: Lage artikkel om pannekaker</h3>
+					<figure>
+						<img src="../res/wordpress-step15.webp" alt="Steg 15: Lage artikkel om pannekaker">
+						<figcaption><i>Steg 15: Lage artikkel om pannekaker</i></figcaption>
+					</figure>
+					<p>
+						Til slutt lager jeg ett siste innlegg om pannekaker.
+					</p>
+
+					<h3>Steg 16: Ferdig</h3>
+					<p>
+						Det var det.
+					</p>
+				</section>
+
+				<section class="sources" itemprop="articleSection">
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li><a href="https://wordpress.org/" target="blank">https://wordpress.org/</a></li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://wordpress.org/" target="blank" rel="nofollow"
+							class="hover-link">WordpPess</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://kinsta.com/knowledgebase/what-is-wordpress/" target="blank" rel="nofollow"
+							class="hover-link">What is WordPress?</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://blog.hubspot.com/marketing/wordpress-website"
+							target="blank" rel="nofollow" class="hover-link">How to use WordPress</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.tutorialspoint.com/wordpress/index.htm" target="blank" rel="nofollow" class="hover-link">WordPress tutorial</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://cyberchimps.com/blog/pros-and-cons-of-wordpress/"
+							target="blank" rel="nofollow" class="hover-link">Pros and Cons of WordPress</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=wordpress" target="blank" class="flex-button">WordPress</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

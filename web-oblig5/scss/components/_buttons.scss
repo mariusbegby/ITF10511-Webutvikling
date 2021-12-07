@@ -1,0 +1,14 @@
+.flex-button {
+    display: flex;
+    flex-direction: column;
+    background-color: $eerie_black;
+    padding: 0.5em;
+    border-radius: 3px;
+    text-decoration: none;
+    color: $cultured;
+    &:hover {
+        background-color: $jet;
+        color: $white;
+        text-decoration: underline;
+    }
+}

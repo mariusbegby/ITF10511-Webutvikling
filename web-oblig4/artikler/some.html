@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="MAL for nye artikler">
+	<meta name="keywords" content="some, social media, sharing, open graph, twitter cards">
+	<title>SOME: Sosiale medier og deling av innhold | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/some.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="SOME: Sosiale medier og deling av innhold | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/some.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/some_400x225.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about social media (SOME) and open graph">
+	<meta property="og:description" content="Sosiale medier, kommer man seg unna dem? De har nok kommet for å bli, og derfor er det viktig at man også tilpasser nettsiden sin slik at de kan deles på sosiale medier i et godt format.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html">CSS layouts</a></li>
+				<li><a itemprop="url" href="../artikler/seo.html">SEO</a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html">Microdata</a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 4</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="some.html"><span itemprop="name">SOME: Sosiale medier og deling av innhold</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline">SOME: Sosiale medier og deling av innhold</h1>
+						<p class="intro">
+							Sosiale medier, kommer man seg unna dem? De har nok kommet for å bli, og derfor er det viktig at man også tilpasser nettsiden sin slik at de kan deles på sosiale medier i et godt format. Her viser jeg hvordan du kan implementere sosiale medier på siden.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Sosiale medier, hva har det med webutvikling å gjøre?</h2>
+					</header>
+
+					<p>
+						Når vi snakker om sosiale medier og webutvikling, mener vi ikke å poste en ny "tweet", eller legge ut nye innlegg på Facebook-siden. Det har faktisk noe med koding å gjøre. Du har sikkert sett noen legge ut en link til en nettside i en chat eller i et innlegg før, så dukker det opp en liten forhåndsvisning av innholdet. Ofte med bilde, tittel og en liten beskrivelse. Det er dette vi mener når vi snakker om sosiale medier i webutvikling. Vi må fortelle hvordan de sosiale mediene skal behandle og vise siden vår i denne forhåndsvisningen.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Open Graph, for Facebook og flere</h2>
+					</header>
+
+					<p>
+						<a href="https://ogp.me/" target="blank" rel="nofollow" class="inline-link">Open Graph</a> er en protokoll utviklet av Facebook som tillater nettsteder å bli vist som "kort" eller med en liten forhåndspresentasjon av innholdet på sosiale medier og andre steder. Løsningen blir selvfølgelig brukt av Facebook, men også mange andre steder og løsninger for å hente ut innformasjon om nettsteder. Det finnes mange attributter du kan velge for å beskrive innholdet på nettstedet og hvordan det skal vises når det deles. Jeg har valgt å implementere Open Graph med følgende informasjon på mine sider:
+					</p>
+
+<pre><code>&lt;meta property="og:title" content="SOME: Sosiale medier og deling av innhold | mariubeg"&gt;
+&lt;meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/some.html"&gt;
+&lt;meta property="og:type" content="article"&gt;
+&lt;meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/some_400x225.png"&gt;
+&lt;meta property="og:image:type" content="image/png"&gt;
+&lt;meta property="og:image:width" content="400"&gt;
+&lt;meta property="og:image:height" content="225"&gt;
+&lt;meta property="og:image:alt" content="Image for article about social media (SOME) and open graph"&gt;
+&lt;meta property="og:description" content="Sosiale medier, kommer man seg unna dem? De har nok kommet for å bli, og derfor er det viktig at man også tilpasser nettsiden sin slik at de kan deles på sosiale medier i et godt format."&gt;</code></pre>
+
+					<p>
+						Dette gir en forhåndsvisning som ser noe slikt ut når sider deles på Facebook (bilde av forsiden):
+					</p>
+
+					<figure>
+						<img src="../res/facebook_sharing_illustration.webp" alt="Illustrasjon av Facebook deling med Open Graph" class="smaller-image" width="536" height="364">
+						<figcaption><i>Illustrasjon av Facebook deling for forsiden.</i></figcaption>
+					</figure>
+
+					<p>
+						Rett og slett, det vi gjør er å fortelle Facebook hva som skal være tittel, beskrivelse og bilde/video etc. på forhåndsvisningen. Dette kan være forskjellig fra teksten i <code>&lt;title&gt;</code> taggen f.eks., så det gir oss mer fleksibilitet. Vi vil kanskje at tittelen skal virke mer engasjerende og spennende når den deles? Da kan vi endre den for når den deles på sosiale medier.
+					</p>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Twitter cards, for Twitter</h2>
+					</header>
+
+					<p>
+						Twitter cards er en enkel implementasjon etter at du har lagt til Open Graph taggene. Jeg bruker <code>&lt;meta name="twitter:card" content="summary_large_image"&gt;</code> på sidene mine, og resultatet blir slikt:
+					</p>
+
+					<figure>
+						<img src="../res/twitter_card_illustration.webp" alt="Illustrasjon av twitter card preview" width="493" height="395" class="smaller-image">
+						<figcaption><i>Illustrasjon av Twitter card for denne siden.</i></figcaption>
+					</figure>
+
+					<p>
+						Men det er også mer du kan gjøre for å tilpasse Twitter cards for siden. Jeg spesifiserte <code>summary_large_image</code> slik at den viser et stort bilde til artikkelen når den deles. <code>twitter:card</code> kan også ha andre verdier, slik som:
+					</p>
+
+					<ul>
+						<li><code>summary</code> - Standard, lite bilde med tekst.</li>
+						<li><code>summary_large_image</code> - Større bilde, men med noe mindre beskrivelse.</li>
+						<li><code>app</code> - For deling av apper som f.eks. er på Google Play eller App Store.</li>
+						<li><code>player</code> - Er det musikk som skal deles, eller en video, kan man få en avspiller til å vises.</li>
+					</ul>
+				</section>
+
+				<p>
+					Vi kan også blant annet spesifisere <code>twitter:site</code> og <code>twitter:creator</code> for å fortelle Twitter hvem sideeieren er og hvem som skrev det lenkete innholdet er på Twitter. Twitter henter resten av informasjonen fra Open Graph løsningen, så det er ikke mer vi trenger å spesifisere, slik som tittel, bilde og beskrivelse. Jeg har oppdatert alle sidene mine (forside, artikler) med både Open Graph og Twitter cards, slik at de kan deles på sosiale medier med en fin forhåndsvisning.
+				</p>
+
+				<section class="sources" itemprop="articleSection">
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li><a href="https://developers.facebook.com/tools/debug/" target="blank">https://developers.facebook.com/tools/debug/</a></li>
+						<li><a href="https://cards-dev.twitter.com/validator" target="blank">https://cards-dev.twitter.com/validator</a></li>
+						<li><a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards" target="blank">https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards</a></li>
+						<li><a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started" target="blank">https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started</a></li>
+						<li><a href="https://ogp.me/" target="blank">https://ogp.me/</a></li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://ogp.me/" target="blank" rel="nofollow"
+							class="hover-link">The Open Graph Protocol</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.opengraph.xyz/" target="blank" rel="nofollow"
+							class="hover-link">Preview social media share</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://neilpatel.com/blog/open-graph-meta-tags/"
+							target="blank" rel="nofollow" class="hover-link">Useful Open Graph Meta Tags</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developers.facebook.com/docs/sharing/webmasters/" target="blank" rel="nofollow" class="hover-link">A Guide to Sharing for Webmasters</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://ahrefs.com/blog/open-graph-meta-tags/"
+							target="blank" rel="nofollow" class="hover-link">Open Graph Meta Tags: Everything You Need to Know</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=open+graph+protocol" target="blank" class="flex-button">Open Graph Protocol</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!-- sitemap.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/</loc>
+	</url>
+	<url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/css-layouts.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/html-forms.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/html5-video-audio.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/mal.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/media-queries.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/microdata.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/planlegging.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/responsivt-design.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/sass.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/seo.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/some.html</loc>
+	</url>
+    <url>
+		<loc>https://itstud.hiof.no/~mariubeg/oblig4/artikler/tilgjengelighet.html</loc>
+	</url>
+</urlset>

@@ -1,0 +1,31 @@
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.25rem);
+    }
+}
+
+#page-header {
+    background: $independence;
+    background: linear-gradient(45deg, $cyber_grape 0%, $independence 50%, $tuscan_red 100%);
+    color: $cultured_alt;
+    grid-area: header;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-content: flex-start;
+    h2 {
+        margin: 0;
+        text-shadow: 3px 3px 0px $shadow_dark;
+        transition: transform 0.5s;
+        &:hover {
+            animation: bounce 0.5s;
+        }
+    }
+    i {
+        margin: 0 0.5rem;
+    }
+}

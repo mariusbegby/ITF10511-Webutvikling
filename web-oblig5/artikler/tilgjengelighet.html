@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<!-- Meta tags and title -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Et av de mest oversette områdene når man utvikler en nettside er å gjøre innholdet tilgjengelig. Tilgjengelighet vil si at alle skal kunne bruke siden din, og at informasjon skal kunne presenteres og navigeres på forskjellige måter.">
+	<meta name="keywords" content="universell utforming, tilgjengelighet, accessibility">
+	<title>Tilgjengelighet: Nettsider for alle slags brukere | mariubeg</title>
+
+	<!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/tilgjengelighet.html">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="Tilgjengelighet: Nettsider for alle slags brukere | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/tilgjengelig.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/tilgjengelighet_400x225.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about accessibility and websites">
+	<meta property="og:description" content="Et av de mest oversette områdene når man utvikler en nettside er å gjøre innholdet tilgjengelig. Tilgjengelighet vil si at alle skal kunne bruke siden din, og at informasjon skal kunne presenteres og navigeres på forskjellige måter.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Font awesome pro kit -->
+	<script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets & CSS -->
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" media="print" href="../css/print.css">
+
+	<!-- Scripts -->
+	<script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+	<div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html"><span lang="en">CSS layouts</span></a></li>
+				<li><a itemprop="url" href="../artikler/seo.html"><span lang="en">SEO</span></a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html"><span lang="en">Microdata</span></a></li>
+				<li><a itemprop="url" href="../artikler/wordpress.html"><span lang="en">WordPress</span></a></li>
+				<li><a itemprop="url" href="../artikler/cms.html"><span lang="en">CMS</span></a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only" lang="en">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+				<section itemprop="articleSection">
+					<header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 4</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="tilgjengelighet.html"><span itemprop="name">Tilgjengelighet: Nettsider for alle slags brukere</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+						<h1 class="headline">Tilgjengelighet: Nettsider for alle slags brukere</h1>
+						<p class="intro">
+							Et av de mest oversette områdene når man utvikler en nettside er å gjøre innholdet tilgjengelig. Tilgjengelighet vil si at alle skal kunne bruke siden din, og at informasjon skal kunne presenteres og navigeres på forskjellige måter, blant annet skjermleser og tastaturnavigasjon.
+						</p>
+					</header>
+				</section>
+
+				<section itemprop="articleSection">
+					<header>
+						<h2>Hva, og hvorfor?</h2>
+					</header>
+
+					<p>
+						<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" class="inline-link" target="blank"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr></a> eller <span lang="en">Web Content Accessibility Guidelines</span> er et sett med retningslinjer utviklet gjennom W3C, som skal møte behovene til enkeltpersoner, bedrifter og myndigheter verden rundt. Tilsynet for universell utforming av <abbr title="informasjons- og kommunikasjonsteknologi">ikt</abbr> beskriver <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> med 4 prinsipper:
+					</p>
+
+					<ol>
+						<li>Mulig å oppfatte - <i>uansett hvordan brukeren får med seg innhold, enten det er med berøring, lyd eller syn.</i></li>
+						<li>Mulig å betjene - <i>uansett hvordan brukeren navigerer, for eksempel uten datamus, med skjermforstørrer eller med stemmekommando.</i></li>
+						<li>Forståelig - <i>sørge for at brukeren forstår informasjonen og hvordan de løser brukeroppgaven.</i></li>
+						<li>Robust - <i>sørge for at løsningen fungerer med ulike nettlesere og hjelpemiddelteknologier som finnes i dag, og ta høyde for det som vil komme i fremtiden.</i></li>
+					</ol>
+
+					<p>
+						Det er disse prinsippene some beskriver hvordan du skal bygge nettsiden for å gjøre den så tilgjengelig som mulig. Har man disse i bakhodet når man koder, har man nok kommet ganske langt på veien til å gjøre siden tilgjengelig og oppfylle krav.
+					</p>
+				</section>
+
+				<div class="pagebreak"></div>
+				<section itemprop="articleSection">
+					<header>
+						<h2>Test av kontrast, skjermleser og tastaturnavigasjon</h2>
+					</header>
+
+					<p>
+						Som en del av oppgaven skal jeg teste kontraster på siden, bruk av skjermleser og tastaturnavigasjon. Jeg startet med en test på <a href="https://wave.webaim.org/" target="blank" class="inline-link" rel="nofollow"><abbr title="Web Accessibility Evaluation Tool">WAVE</abbr></a>. Der fikk jeg en rask oversikt over hvordan siden min ligger an. Skulle det mangle <code>alt=""</code> tekst på bilder f.eks., ville denne testen ha sagt ifra. Her er resultatet:
+					</p>
+
+					<figure>
+						<img src="../res/wave_test_illustration.webp" alt="Illustrasjon av resultat fra WAVE verktøyet" width="359" height="624" class="smaller-image">
+						<figcaption><i>Illustrasjon av resultat fra <a href="https://wave.webaim.org/" target="blank" class="inline-link" rel="nofollow">WAVE</a>.</i></figcaption>
+					</figure>
+
+					<p>
+						Testen passerte uten feil. Med dette verktøyet kan jeg også teste kontrasten, så jeg testet dette manuelt noen steder, og fant ingen feil.
+					</p>
+
+					<p>
+						For test av siden med skjermleser brukte jeg en utvidelse til <span lang="en">Chrome</span>. Opplesning av tekst og elementer med tekst fungerte bra. Jeg opplevde litt problemer på denne artikkelsiden, da jeg brukte ikoner for å illustrere avmerkning og kryss, så la til <code>&lt;span class="sr-only"&gt;godkjent&lt;/span&gt;</code> og <code>&lt;span class="sr-only"&gt;ikke godkjent&lt;/span&gt;</code>for å erstatte disse visuelle elementene når skjermleser brukes. <code>class="sr-only"</code> gjør at teksten bare er synlig for skjermlesere, så man ser ikke teksten på vanlig måte på siden.
+					</p>
+
+					<p>
+						Tastaturnavigasjon fungerte som forventet og uten problemer. Jeg hadde allerede tidligere lagt til <code>role=""</code> attributtet på enkelte elementer som <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> osv. Her trengte jeg ikke endre på noe.
+					</p>
+				</section>
+
+				<div class="pagebreak"></div>
+				<section itemprop="articleSection">
+					<header>
+						<h2><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 sjekkliste</h2>
+					</header>
+
+					<p>
+						Tilsynet for universell utforming av <abbr title="informasjons- og kommunikasjonsteknologi">ikt</abbr> har en side som omhandler <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0-standarden. Der er det god informasjon om hvordan siden skal utformes for å gjøres tilgjengelig for brukere. Du kan lese mer om dette hos uutilsynet her: <a href="https://www.uutilsynet.no/wcag-standarden/wcag-20-standarden/86" target="blank" class="inline-link"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0-standarden</a>. Her er min sjekkliste for denne standarden:
+					</p>
+
+					<ul>
+						<li>1.1.1 (A) - Ikke-tekstlig innhold - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.2.1 (A) - Bare lyd og bare video - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>
+							1.2.2 (A) - Teksting - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen video- eller lydelementer trenger teksting.</i></li>
+							</ul>
+						</li>
+						<li>1.2.3 (A) - Synstolkning eller mediealternativ - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>
+							1.2.5 (AA) - Synstolkning - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen innhold trenger synstolkning.</i></li>
+							</ul>
+						</li>
+						<li>1.3.1 (A) - Informasjon og relasjoner - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.3.2 (A) - Meningsfylt rekkefølge - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.3.3 (A) - Sensoriske egenskaper - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.4.1 (A) - Bruk av farge - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.4.2 (A) - Styring av lyd  - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.4.3 (AA) - Kontrast - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.4.4 (AA) - Endring av tekststørrelse - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>1.4.5 (AA) - Bilder av tekst - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.1.1 (A) - Tastatur - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.1.2 (A) - Ingen tastaturfelle - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.2.1 (A) - Justerbar hastighet - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>
+							2.2.2 (A) - Pause, stopp, skjul - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen animasjoner eller automatiske bevegelser i innhold.</i></li>
+							</ul>
+						</li>
+						<li>2.3.1 (A) - Terskelverdi på maksimalt tre glimt - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>
+							2.4.1 (A) - Hoppe over blokker - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen blokkerende innhold eller innhold som må hoppes over for å komme til hovedinnhold.</i></li>
+							</ul>
+						</li>
+						<li>2.4.2 (A) - Sidetitler - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.4.3 (A) - Fokusrekkefølge - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.4.4 (A) - Formål med lenke - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.4.5 (AA) - Flere måter - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.4.6 (AA) - Overskrifter og ledetekster - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>2.4.7 (AA) - Synlig fokus - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<div class="pagebreak"></div>
+						<li>3.1.1 (A) - Språk på siden - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>
+							3.1.1 (AA) - Språk på deler av innhold - <i class="fa-solid fa-x invalid-red-text"></i><span class="sr-only">ikke godkjent</span>
+							<ul>
+								<li><i>Enkelte engelske ord og uttrykk er ikke markert med riktig språk i artikler.</i></li>
+							</ul>
+						</li>
+						<li>3.2.1 (A) - Fokus - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>3.2.2 (A) - Inndata - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>3.2.3 (AA) - Konsekvent navigering - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>3.2.4 (AA) - Konsekvent identifikasjon - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>
+							3.3.1 (A) - Identifikasjon av feil - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen skjemaer som sender inndata til webserver på siden.</i></li>
+							</ul>
+						</li>
+						<li>
+							3.3.2 (A) - Ledetekster eller instruksjoner - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen skjemaer som skal brukes til utfylling av bruker.</i></li>
+							</ul>
+						</li>
+						<li>
+							3.3.3 (AA) - Forslag ved feil - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen skjemaer som skal brukes til utfylling av bruker.</i></li>
+							</ul>
+						</li>
+						<li>
+							3.3.4 (AA) - Forhindring av feil - <i class="fa-regular fa-do-not-enter warning-orange-text"></i><span class="sr-only">ikke aktuelt</span>
+							<ul>
+								<li><i>Ingen skjemaer som skal brukes til utfylling av bruker.</i></li>
+							</ul>
+						</li>
+						<li>4.1.1 (A) - Parsing - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+						<li>4.1.2 (A) - Navn, rolle, verdi - <i class="fa-solid fa-check valid-green-text"></i><span class="sr-only">godkjent</span></li>
+					</ul>
+
+					<p>
+						Jeg hadde allerede tidligere fikset på noen ting slik som 2.4.5 (AA) og lagt til <span lang="en">"breadcrumps"</span> som alternativ navigering fra artikler. Jeg fant bare betydelig feil på 3.1.1 (AA) der jeg ikke oppgir språket på enkelte ord og uttrykk innenfor en artikkel. Dette retter jeg opp ved å legge til <code>lang=""</code> attributtet der det brukes et annet språk enn hovedspråket <code>nb</code> (norsk bokmål). Jeg leser gjennom artiklene og legger til dette der jeg ser det mangler, f.eks. <code>&lt;span lang="en"&gt;"breadcrumps"&lt;/span&gt;</code>. Etter å ha gått gjennom flere punkter på <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>, er jeg fornøyd med resultatet av tilgjengelighet på nettsiden min.
+					</p>
+				</section>
+
+				<section class="sources" itemprop="articleSection">
+					<header>
+						<h2>Kilder og referanser:</h2>
+					</header>
+
+					<ul>
+						<li><a href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713" target="blank">https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713</a></li>
+						<li><a href="https://www.uutilsynet.no/wcag-standarden/wcag-20-standarden/86" target="blank">https://www.uutilsynet.no/wcag-standarden/wcag-20-standarden/86</a></li>
+						<li><a href="https://webaim.org/intro/" target="blank">https://webaim.org/intro/</a></li>
+						<li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="blank">https://www.w3.org/WAI/fundamentals/accessibility-intro/</a></li>
+						<li><a href="https://developers.google.com/web/fundamentals/accessibility" target="blank">https://developers.google.com/web/fundamentals/accessibility</a></li>
+					</ul>
+				</section>
+
+			</article>
+		</main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://wave.webaim.org/" target="blank" rel="nofollow"
+							class="hover-link">Web accessibility evaluation tool</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="blank" rel="nofollow"
+							class="hover-link">Introduction to Web Accessibility</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://webaim.org/intro/"
+							target="blank" rel="nofollow" class="hover-link">WebAIM - Introduction to Web Accessibility</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developers.google.com/web/fundamentals/accessibility" target="blank" rel="nofollow" class="hover-link">Accessibility</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3.org/WAI/"
+							target="blank" rel="nofollow" class="hover-link">Making the Web Accessible</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=web+accessibility" target="blank" class="flex-button">Web accessibility</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+	</div>
+</body>
+
+</html>

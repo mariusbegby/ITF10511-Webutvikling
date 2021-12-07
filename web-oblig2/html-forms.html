@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<title>mariubeg - HTML-skjemaer: Brukerinput og interraksjon</title>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="stylesheet" href="gridstyle.css">
+        <link rel="stylesheet" media="print" href="print.css" />
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h2>mariubeg - webutvikling</h2>
+		</header>
+
+		<nav id="navbar">
+			<ul>
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="html-forms.html">HTML-skjemaer</a></li>
+				<li><a href="media-queries.html">Mediatyper</a></li>
+				<li><a href="css-layouts.html">CSS layouts</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<article>
+
+				<section>
+                    <header>
+                        <h1 class="headline">HTML-skjemaer: Brukerinput og interraksjon</h1>
+                        <p class="intro">
+                            HTML-skjemaer lar brukeren samhandle med nettsiden og legge inn brukerinput, som senere kan behandles av webserveren. Ved bruk av skjemaer, kan sluttbrukeren interragere med nettsiden på måter som ikke hadde vært mulig uten skjemaene.
+                        </p>
+                    </header>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Hva er et HTML-skjema?</h2>
+                    </header>
+                    <p>
+                        Et HTML skjema består av ett eller flere felter hvor brukeren kan legge inn noe eller gjøre noe med. Dette tillater oss å bygge nettsider hvor vi kan samle inn data fra brukeren og bruke dette til å gjøre noe med. Man kan laste opp filer, skrive inn tekst, huke av og på ting, etc. For eksempel, med bruk av tekstfelter kan vi la brukeren opprette bruker, logge inn på nettsiden og lignende. Dette krever også mer koding på webserveren som skal behandle disse opplysningene som brukeren sender inn med skjemaet.
+                    </p>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Hvilke elementer brukes for HTML-skjemaer?</h2>
+                    </header>
+                    <p>
+                        Det er mange forskjellige elementer som tilhører et HTML-skjema. Eksempler på disse elementene er:
+                    </p>
+
+                    <ul>
+                        <li><code>&lt;form&gt;</code></li>
+                        <li><code>&lt;input&gt;</code></li>
+                        <li><code>&lt;label&gt;</code></li>
+                        <li><code>&lt;select&gt;</code></li>
+                        <li><code>&lt;textarea&gt;</code></li>
+                        <li><code>&lt;button&gt;</code></li>
+                        <li><code>&lt;option&gt;</code></li>
+                        <li>Samt noen flere...</li>
+                    </ul>
+
+                    <p>
+                        <code>&lt;form&gt;</code> brukes til å holde på alle elementene som tilhører et enkelt skjema. Det er også her vi sier hvor informasjonen i skjemaet skal sendes. <code>&lt;input&gt;</code> er et generisk element som igjen tar et argument som sier hva slags input den skal ta imot. Her kan man velge <code>text</code>, <code>password</code>, <code>button</code>, <code>checkbox</code>, <code>file</code>, <code>email</code> og mye mer, basert på hva slags informasjon man vil brukeren skal sende inn. <code>&lt;label&gt;</code> brukes til å lage en etikett og knytte det til et input-felt, slik at man kan forklare hva brukeren skal skrive inn i feltet.
+                    </p>
+                </section>
+
+                <section>
+                    <div class="pagebreak"></div>
+                    <header>
+                        <h2>Eksempel på et HTML skjema</h2>
+                    </header>
+                    <p>
+                        Her er et eksempel på hvordan et HTML skjema kan se ut med bruk av følgende: <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>-elementer, <code>&lt;textarea&gt;</code> og <code>&lt;button&gt;</code>.
+                    </p>
+
+                    <form>
+                        <label for="navn"><span class="form-required">*</span> Navn:</label>
+                        <input type="text" name="navn" id="navn" required><br>
+
+                        <label for="epost">E-post:</label>
+                        <input type="email" name="epost" id="epost"><br>
+
+                        <label for="telefon">Telefon:</label>
+                        <input type="tel" name="telefon" id="telefon" pattern="[0-9]{8}"><br>
+
+                        <label for="lang-melding"><span class="form-required">*</span> Lenger melding:</label><br>
+                        <textarea name="lang-melding" id="lang-melding" cols="30" rows="5" required></textarea><br>
+
+                        <button type="submit">Send inn!</button>
+                    </form>
+                </section>
+
+                <section class="sources">
+                    <header>
+                        <h4>Kilder og referanser:</h4>
+                    </header>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/html_forms.asp" target="blank">https://www.w3schools.com/html/html_forms.asp</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_form_elements.asp" target="blank">https://www.w3schools.com/html/html_form_elements.asp</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_forms_attributes.asp" target="blank">https://www.w3schools.com/html/html_forms_attributes.asp</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_form_input_types.asp" target="blank">https://www.w3schools.com/html/html_form_input_types.asp</a></li>
+                        <li><a href="https://www.codecademy.com/resources/docs/html/forms" target="blank">https://www.codecademy.com/resources/docs/html/forms</a></li>
+                        <li><a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet" target="blank">https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet</a></li>
+                    </ul>
+                </section>
+
+			</article>
+		</main>
+		<aside>
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4>Video om webutvikling</h4>
+				<video preload="none" poster="https://i.ibb.co/9qWYHwz/thumbnail.png" controls>
+					<source src="web_development_example_video.mp4" type="video/mp4">
+				</video>
+			</section>
+
+			<section>
+				<h4>Responsivt design - artikler</h4>
+				<ul>
+					<li>❯ <a href="https://www.w3schools.com/html/html_responsive.asp" target="blank" class="hover-link">HTML Responsive Web Design</a></li>
+					<li>❯ <a href="https://web.dev/responsive-web-design-basics/" target="blank" class="hover-link">Responsive web design basics</a></li>
+					<li>❯ <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="blank" class="hover-link">Responsive design</a></li>
+					<li>❯ <a href="https://kinsta.com/blog/responsive-web-design/" target="blank" class="hover-link">The Beginner’s Guide to Responsive Web Design</a></li>
+					<li>❯ <a href="https://xd.adobe.com/ideas/principles/web-design/responsive-web-design-2/" target="blank" class="hover-link">Responsive Web Design Tutorial and Best Practices</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Google søk</h4>
+				<a href="https://www.google.com/search?q=html+forms" target="blank" class="flex-button">HTML forms</a>
+			</section>
+		</aside>
+		<footer>
+			<p>
+				Marius Begby - mariubeg@hiof.no || Webutvikling 2021
+			</p>
+		</footer>
+	</div>
+	</body>
+</html>

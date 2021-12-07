@@ -1,0 +1,11 @@
+main {
+	grid-area: main;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: $white;
+    border-radius: 3px;
+    box-shadow: 0 0 3px $shadow_light;
+}

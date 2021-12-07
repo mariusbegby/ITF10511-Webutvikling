@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <!-- Meta tags and title -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noen ganger har man behov for å tilpasse måten innholdet på nettsiden blir vist til brukeren, basert på hvilken enhet den vises på. Dette kan vi løse med media queries.">
+	<meta name="keywords" content="css, media queries, resposive, mobile-first">
+    <title>Media queries: Dynamisk tilpasning av innhold | mariubeg</title>
+
+    <!-- Canonical url -->
+	<link rel="canonical" href="https://itstud.hiof.no/~mariubeg/oblig4/artikler/media-queries.html">
+
+    <!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+	<!-- Open Graph meta -->
+	<meta property="og:title" content="Media queries: Dynamisk tilpasning av innhold | mariubeg">
+	<meta property="og:url" content="https://itstud.hiof.no/~mariubeg/oblig4/artikler/media-queries.html">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://itstud.hiof.no/~mariubeg/oblig4/res/media-queries_400x225.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="225">
+	<meta property="og:image:alt" content="Image for article about css media queries and responsive design">
+	<meta property="og:description" content="Noen ganger har man behov for å tilpasse måten innholdet på nettsiden blir vist til brukeren, basert på hvilken enhet den vises på. Dette kan vi løse med media queries.">
+
+	<!-- Twitter cards meta -->
+	<meta name="twitter:card" content="summary_large_image">
+
+    <!-- Font awesome pro kit -->
+    <script src="https://kit.fontawesome.com/b6f67c4ba7.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheets & CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" media="print" href="../css/print.css">
+
+    <!-- Scripts -->
+    <script src="../js/responsive-menu.js"></script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+    <div id="grid-container">
+
+		<header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<span id="header-logo-text" itemprop="name">mariubeg <i class="fa-regular fa-code"></i> webutvikling</span>
+		</header>
+
+		<nav id="navbar" role="navigation" class="responsive-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<ul>
+				<li><a itemprop="url" href="../">Hjem</a></li>
+				<li><a itemprop="url" href="../artikler/responsivt-design.html">Responsivt design</a></li>
+				<li><a itemprop="url" href="../artikler/html-forms.html">HTML-skjemaer</a></li>
+				<li><a itemprop="url" href="../artikler/media-queries.html">Mediatyper</a></li>
+				<li><a itemprop="url" href="../artikler/css-layouts.html"><span lang="en">CSS layouts</span></a></li>
+				<li><a itemprop="url" href="../artikler/seo.html"><span lang="en">SEO</span></a></li>
+				<li><a itemprop="url" href="../artikler/some.html">SOME</a></li>
+				<li><a itemprop="url" href="../artikler/microdata.html"><span lang="en">Microdata</span></a></li>
+				<li><a itemprop="url" href="../artikler/wordpress.html"><span lang="en">WordPress</span></a></li>
+				<li><a itemprop="url" href="../artikler/cms.html"><span lang="en">CMS</span></a></li>
+				<li>
+					<a href="javascript:void(0)" id="nav-mobile-menu" onclick="responsiveMenu()">
+						<i class="fa-regular fa-bars" id="nav-mobile-icon"></i>
+						<span class="sr-only" lang="en">Mobile navigation menu</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main role="main" itemscope itemprop="mainContentOfPage">
+			<article itemscope itemtype="https://schema.org/Article">
+
+                <section itemprop="articleSection">
+                    <header>
+						<nav>
+							<ol itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumps">
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<i class="fa-solid fa-house"></i>
+									<a itemprop="item" href="../"><span itemprop="name">Forside</span></a>
+									<meta itemprop="position" content="1"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#"><span itemprop="name">Oblig 2</span></a>
+									<meta itemprop="position" content="2"/>
+									<i class="fa-solid fa-angle-right"></i>
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="media-queries.html"><span itemprop="name">Media queries: Dynamisk tilpasning av innhold</span></a>
+									<meta itemprop="position" content="3"/>
+								</li>
+							</ol>
+						</nav>
+
+                        <h1 class="headline">Media queries: Dynamisk tilpasning av innhold</h1>
+                        <p class="intro">
+                            Noen ganger har man behov for å tilpasse måten innholdet på nettsiden blir vist til
+                            brukeren, basert på hvilken enhet den vises på. Dette kan vi løse med media queries. Media
+                            queries tillater oss å skrive CSS basert på spesifikke tilstander, f.eks. skjermstørrelsen
+                            til brukeren.
+                        </p>
+                    </header>
+                </section>
+
+                <section itemprop="articleSection">
+                    <header>
+                        <h2>Media queries, hva og hvordan</h2>
+                    </header>
+
+                    <p>
+                        Media queries brukes når man skal endre måten innholdet blir vist på til brukeren, basert på
+                        noen spesifikke tilstander. Vi kan også målrette spesifikke mediatyper. Mediatypene som finnes
+                        er:
+                    </p>
+
+                    <ul>
+                        <li><code>all</code> - matcher alle mediatyper/enheter</li>
+                        <li><code>screen</code> - matcher enheter med en skjerm som kan vise innhold</li>
+                        <li><code>print</code> - matcher dokumenter som er klare for å printes ut</li>
+                        <li><code>speech</code> - matcher enheter som kan lese innholdet opp med lyd, f.eks. en
+                            skjermleser</li>
+                    </ul>
+
+                    <p>
+                        Vi kan også målrette etter funksjoner. F.eks. kan vi spesifisere <code>width</code> eller
+                        <code>height</code> for å målrette etter spesifikke skjermstørrelser/oppløsning. Eller så kan vi
+                        ha egne stiler for om enheten er rotert i landskapsmodus eller portrettmodus med
+                        <code>orientation</code>. Det finnes mange slike funksjoner som nettleseren kan sjekke etter, og
+                        det gjør at vi kan lage den beste brukeropplevelsen, uansett hvilken enhet eller tilgjengelighet
+                        brukeren trenger.
+                    </p>
+
+                    <div class="pagebreak"></div>
+                    <header>
+                        <h3>Eksempel kode</h3>
+                    </header>
+
+                    <p>
+                        Her er et eksempel på et par forskjellige media queries, som viser hvordan de fungerer:
+                    </p>
+
+                    <pre>
+<code>/* Standard stil, hvis ingen media query matcher */
+body {
+    background: red;
+}
+
+/* Minimum 600 piksler og over */
+@media (min-width: 600px) {
+    body {
+        background: green;
+    }
+}
+
+/* Minimum 1200 piksler og over */
+/* Bare hvis siden blir vist på en skjerm */
+@media screen and (min-width: 1200px) {
+    body {
+        background: blue;
+    }
+}</code></pre>
+
+                    <p>
+                        Dersom nettleservinduet er under 600 piksler, vil bakgrunnsfargen være rød, dette er "fallback"
+                        stilen. Hvis vinduet er over 600 piksler, men under 1200 piksler, vil bakgrunnsfargen være
+                        grønn, og hvis vinduet er over 1200 piksler vil bakgrunnsfargen være blå.
+                    </p>
+                </section>
+
+                <section itemprop="articleSection">
+                    <div class="pagebreak"></div>
+                    <header>
+                        <h2>Fordeler, ulemper og bruksområder</h2>
+                    </header>
+
+                    <p>
+                        Fordelene med media queries er mange. Med riktig bruk kan man tilby forskjellige utgaver av
+                        nettsiden basert på brukeren sin enhet, som sikrer best mulig brukeropplevelse. Det er ikke
+                        sikkert desktop opplevelsen er best på mobil, så da kan man bruke media queries til å endre på
+                        stilen for mobilvisning. Noen sider trenger kanskje også ekstra fokus på tilgjengelighet, og da
+                        kan man enda bedre tilpasse brukeropplevelsen for de med ekstra behov. Med media queries blir
+                        nettsidene enda mer dynamiske.
+                    </p>
+
+                    <p>
+                        Når man skal lage forskjellige brukeropplevelser basert på oppløsning og mye annet, betyr dette
+                        også mer koding. Dette er en av de største ulempene med media queries; Du må bruke mer arbeid og
+                        tid for å lage nettsiden før den kan serveres til brukeren. Dette gjør det også vanskeligere å
+                        vedlikeholde koden. Skal du legge til noe nytt eller endre på designet, må man gjøre dette for
+                        alle brukeropplevelsene.
+                    </p>
+
+                    <p>
+                        Skal man bruke media queries for å gjøre siden mer responsiv, burde man tenke "mobile first".
+                        Det vil si at man starter med å designe for mobilopplevelsen, og heller legger til media queries
+                        målrettet for større og større skjermstørrelser for tablet, desktop etc. Mobilversjonen av et
+                        nettsted vil alltid være brukbar på alle skjermstørrelser, så derfor er det bedre å gå denne
+                        veien, enn å designe for desktop versjonen først.
+                    </p>
+                </section>
+
+                <section class="sources" itemprop="articleSection">
+                    <header>
+						<h2>Kilder og referanser:</h2>
+                    </header>
+
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+                                target="blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries</a>
+                        </li>
+                        <li><a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/"
+                                target="blank">https://css-tricks.com/a-complete-guide-to-css-media-queries/</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"
+                                target="blank">https://www.w3schools.com/css/css_rwd_mediaqueries.asp</a></li>
+                    </ul>
+                </section>
+
+            </article>
+        </main>
+
+		<aside role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+			<h3>Relatert innhold</h3>
+
+			<section>
+				<h4><i class="fa-solid fa-video"></i> Video om webutvikling</h4>
+				<video preload="none" poster="../res/thumbnail-video_400x225.webp" title="Video om webutvikling"
+					controls>
+					<source src="../res/web_dev.mp4" type="video/mp4">
+					Din nettleser støtter ikke denne videoen.
+				</video>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-newspaper"></i> Eksterne ressurser</h4>
+				<ul>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/" target="blank" rel="nofollow"
+							class="hover-link">A Complete Guide to CSS Media Queries</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="blank" rel="nofollow"
+							class="hover-link">Responsive Web Design - Media Queries</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+							target="blank" rel="nofollow" class="hover-link">Using media queries</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://developers.google.com/search/blog/2012/04/responsive-design-harnessing-power-of" target="blank" rel="nofollow" class="hover-link">Harnessing the power of media queries</a></li>
+					<li><i class="fa-solid fa-angle-right"></i> <a href="https://web.dev/responsive-web-design-basics/"
+							target="blank" rel="nofollow" class="hover-link">Responsive web design basics</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h4><i class="fa-solid fa-link"></i> Google søk</h4>
+				<a href="https://www.google.com/search?q=css+media+queries" target="blank" class="flex-button">CSS media queries</a>
+			</section>
+		</aside>
+
+		<footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+			<p>
+				<span itemprop="copyrightHolder">Marius Begby</span> - mariubeg@hiof.no || Webutvikling <span itemprop="copyrightYear">2021</span>
+			</p>
+		</footer>
+
+    </div>
+</body>
+
+</html>

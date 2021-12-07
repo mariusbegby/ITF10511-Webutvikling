@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+	<meta charset="UTF-8">
+	<title>mariubeg - Semantikk i HTML</title>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+
+		<header class="page-header">
+			<nav>
+				<h2 id="pageHeaderLogo"><a href="/">Web</a></h2>
+				<ul>
+					<li><a href="/">Oblig 1</a></li>
+					<li><a href="#" class="disabled">Oblig 2</a></li>
+					<li><a href="#" class="disabled">Oblig 3</a></li>
+					<li><a href="#" class="disabled">Oblig 4</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<article>
+				<header>
+					<h1>Semantikk i HTML</h1>
+					<p>
+						Det er veldig mange måter man kan sette sammen og strukturere en nettside. Derfor er det laget haugevis med predefinerte tagger som kan brukes.
+						Noen av disse taggene har en egen rolle og er definert for spesifikk bruk. Disse taggene kaller vi semantiske.
+						Ikke-semantiske tagger vil derfor ikke ha noe klar rolle og kan brukes til mye forskjellig.
+					</p>
+				</header>
+
+				<header>
+					<h2>Hvorfor brukes semantiske tagger?</h2>
+				</header>
+				<p>
+					Rollen til semantiske tagger er å fortelle nettleseren hva meningen med siden og innholdet er. Det finnes forskjellige semantiske tagger, som hver har sin egen rolle.
+				</p>
+				<p>
+					Tidligere byttet vi ut <code>&lt;div&gt;</code> elementer med de semantiske elementene
+					<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code> og <code>&lt;footer&gt;</code>.
+					Hver av disse semantiske elementene har sin egen rolle. Ved å ta i bruk de semantiske taggene, vet nettleseren, søkemotorer og andre verktøy
+					enklere hva som er grunnen til at innholdet er plassert der det er, og hva meningen med innholdet er.
+					For eksempel så vil <code>&lt;nav&gt;</code> blant annet fortelle at det er plassert innhold ment for navigasjon på siden.
+				</p>
+
+                <header>
+					<h2>Hva er forskjellen på semantisk og ikke-semantisk?</h2>
+				</header>
+				<p>
+					Som forklart, har semantiske tagger en spesifikk rolle, og ikke-semantiske elementer vil derfor ha ett generelt bruksområde.
+					Eksempler på ikke-semantiske elementer er <code>&lt;div&gt;</code> og <code>&lt;span&gt;</code>.
+					<code>&lt;div&gt;</code> har ingen klar rolle, men kan brukes til veldig mye. Det er vanlig å bruke class/id egenskapen for å style og endre på innholdet under denne taggen.
+					<code>&lt;span&gt;</code> brukes ofte til å style elementer på samme linje (inline), også med hjelp av class/id egenskapen.
+				</p>
+				<p>
+					Så forskjellen på disse ikke-semantiske elementene og de semantiske elementene er at ved <code>&lt;div&gt;</code> og <code>&lt;span&gt;</code>,
+					så bestemmer du selv hvilken rolle de skal ha, og hva de skal brukes til. Semantiske elementer er ment å brukes på deres spesifikke bruksområde.
+					Det er f.eks. forventet at du bruker <code>&lt;nav&gt;</code> til innholdet på siden som inneholder navigasjon, og ikke en <code>&lt;div&gt;</code>.
+					Selv om begge kan brukes, vil de bli lest forskjellig av nettlesere og søkemotorer, som kan forstå innholdet på en annen måte enn det er ment hvis man ikke bruker semantiske tagger.
+				</p>
+
+				<header>
+					<h3>Kilder:</h3>
+				</header>
+                <p>
+                    <a href="https://www.codecademy.com/articles/accessibility-and-html" target="blank">https://www.codecademy.com/articles/accessibility-and-html</a><br>
+                    <a href="https://www.codecademy.com/articles/html5-features" target="blank">https://www.codecademy.com/articles/html5-features</a><br>
+					<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="blank">https://www.w3schools.com/html/html5_semantic_elements.asp</a>
+                </p>
+			</article>
+		</main>
+
+		<aside>
+			<header>
+				<h3>Linker til ressurser</h3>
+			</header>
+			<ul>
+				<li><a href="https://www.w3schools.com" target="blank">W3schools</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials#html-tutorials" target="blank">MDN Web Docs</a></li>
+				<li><a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet" target="blank">Cheatsheets</a></li>
+			</ul>
+		</aside>
+
+		<footer>
+			<p>Marius Begby || Webutvikling 2021</p>
+		</footer>
+
+	</div>
+</body>
+</html>

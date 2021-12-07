@@ -1,0 +1,58 @@
+body {
+    background-color: $cultured;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -ms-overflow-style: none;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+q, blockquote, cite, address {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+}
+
+code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    background-color: $cultured_dark;
+    padding: 1px 2px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+    code {
+        display: block;
+        width: fit-content;
+        padding: 1rem;
+        background-color: $jet;
+        color: $cultured_alt;
+        font-size: 0.9em;
+        tab-size: 2;
+    }
+}
+
+form {
+    line-height: 2;
+}
+
+abbr[title] {
+    text-decoration: none;
+    border-bottom: none;
+    cursor: inherit;
+}

@@ -1,0 +1,29 @@
+#hovedside {
+    article {
+        flex-basis: 55%;
+        flex-grow: 1;
+        min-width: 250px;
+        padding: 1rem;
+        background-color: $cultured_alt;
+        box-shadow: 0 0 3px $shadow_light;
+        border-radius: 3px;
+        transition: transform 0.5s;
+        &:hover {
+            transform: translateY(-0.25rem);
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .headline {
+            margin-top: 0;
+        }
+    }
+}
+
+#hovedside-header {
+    flex-basis: 100%;
+    h1 {
+        margin: 0;
+    }
+}

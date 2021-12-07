@@ -1,0 +1,121 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Arial', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+#pageHeaderLogo {
+	display: inline;
+	margin: 0;
+}
+
+.page-header {
+    background-color: #262937;
+}
+
+nav ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.page-header nav {
+	overflow: auto;
+	padding: 5px;
+}
+
+.page-header li {
+	list-style-type: none;
+	display: inline;
+	padding: 5px;
+}
+
+.page-header li a:hover {
+	color:#999;
+}
+
+.page-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	width: 70%;
+	float: left;
+}
+
+aside {
+	width: 30%;
+	float: left;
+}
+
+footer {
+	color: #000;
+	border-top: 1px solid #000;
+	clear: both;
+}
+
+.page-header, main, aside, footer {
+	padding: 10px;
+}
+
+/* Redusere mellomrom fra tittel og tekst i artikler. */
+article h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+/* Redusere mellomrom fra tekst og tittel i artikler. */
+article p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+code {
+	background-color: #e4e4e4;
+	border-radius: 4px;
+	padding: 1px;
+}
+
+pre code {
+	background-color: #e4e4e4;
+	border-radius: 4px;
+	padding: 1px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: black;
+	background-color: #e4e4e4;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+.link-button:hover {
+	background-color: #aabad3;
+}
+
+.disabled:hover {
+	cursor: not-allowed;
+	color: white;
+}
